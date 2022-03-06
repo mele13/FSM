@@ -1,0 +1,62 @@
+body {
+	background-color: #121212;
+}
+
+.select_payment {
+	color: white;
+	border: 3px solid white;
+	border-radius: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	margin: 0 auto;
+	justify-content: center;
+	font-size: 1.3rem;
+	padding-bottom: 1rem;
+}
+
+.select_payment h1 {
+	text-align: center;
+	width: 100%;
+}
+
+.select_payment .button {
+	width: 100%;
+	text-align: center;
+}
+
+.select_payment .button button {
+	border: 3px solid #E60000;
+	background-color: #121212;
+	color: white;
+	transition: all 0.4s linear;
+	border-radius: 10px;
+	font-size: 1.3rem;
+	padding: 0.5em;
+	margin-top: 10px;
+}
+
+.select_payment .button button:hover {
+	border: 3px solid #121212;
+	background-color: #E60000;
+	color: black;
+}
+
+.select_payment .payment_methods {
+	display: flex;
+}
+
+.select_payment .payment_methods .form-group {
+	padding: 1rem;
+}
+
+.select_payment .payment_methods .form-group label {
+	margin-left: 10px;
+}
+
+.select_payment .payment_methods .form-group input {
+	width: 20px;
+	height: 20px;
+	float: left;
+	padding-right: 10px;
+}

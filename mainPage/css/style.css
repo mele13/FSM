@@ -1,0 +1,951 @@
+.ninethi:root {
+  --link-color: #FFFFFF;
+  --link-hover-color: #000000;
+  --nav-background-color: transparent;
+  --nav-item-background-color-hover: #e60000;
+  --nav-height: 68px;
+  --nav-li-transition: all 0.4 linear;
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+  margin: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  height: 100vh;
+}
+
+.head-and-background-container {
+  width: 1900px;
+  height: 900px;
+  background-image: url("../images/muscularManBg.png");
+  background-size: 100% 100vh;
+  margin: 2px;
+}
+
+.head-and-background-container .logo {
+  margin-left: 90px;
+  position: fixed;
+  margin-top: 8px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.buttons a {
+  color: #FFF;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.buttons .home {
+  margin-right: 75px;
+}
+
+.buttons .home, .buttons .logIn {
+  position: fixed;
+  margin-top: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+header {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  /* Elimina el espacido a la izq */
+  margin: 0;
+}
+
+nav ul li {
+  float: left;
+  color: var(--link-color);
+  padding: 1.2em;
+  font-size: 1.2em;
+}
+
+nav ul .nav-item {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+nav ul .no-nav-item {
+  font-size: 30px;
+  margin-right: -1em;
+  color: #FFF;
+}
+
+/* Hide menu at first */
+nav ul #menu-level-1 {
+  display: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+nav ul .nav-item:hover {
+  background-color: var(--nav-item-background-color-hover);
+}
+
+nav ul .nav-item:hover > a {
+  color: var(--link-hover-color);
+}
+
+/* Icono de menu */
+nav ul .burger-icon {
+  padding: 1.12em;
+  background-color: var(--nav-background-color);
+  margin-right: 1em;
+  color: #FFF;
+  cursor: pointer;
+}
+
+nav ul .burger-icon i {
+  font-size: 35px;
+}
+
+.top-image {
+  margin-top: var(--nav-height);
+}
+
+@media screen and (max-width: 992px) {
+  nav ul .burger-icon {
+    width: 3%;
+  }
+  nav ul li {
+    float: none;
+    width: 100%;
+    background-color: var(--nav-background-color);
+  }
+}
+
+/* End dropdown */
+.first-scroll .right-col {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 60%;
+  text-align: center;
+  margin-top: 8%;
+}
+
+.first-scroll .right-col ul {
+  margin-top: 7em;
+  list-style-type: none;
+}
+
+.first-scroll .right-col ul h1 {
+  font-size: 3rem;
+  line-height: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.first-scroll .right-col ul h1 span {
+  color: #E60000;
+}
+
+.first-scroll .right-col .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5%;
+}
+
+.first-scroll .right-col .box #box-join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #E60000;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 4vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-scroll .right-col .box #box-join p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+  margin-left: 0%;
+}
+
+.first-scroll .right-col .scroll-arrow {
+  width: 20em;
+  height: 25vh;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+  display: none;
+}
+
+.svg-wrapper {
+  height: 0%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: -0.1em;
+}
+
+section.second-scroll .activities-top, section.second-scroll .activities-bottom {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.second-scroll .activities-top .type-activity, section.second-scroll .activities-bottom .type-activity {
+  margin-left: 7em;
+  margin-right: 7em;
+}
+
+section.second-scroll .activities-top .type-activity p, section.second-scroll .activities-bottom .type-activity p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 150%;
+  margin-top: -0.2em;
+}
+
+section.second-scroll .activities-top .type-activity a, section.second-scroll .activities-bottom .type-activity a {
+  text-align: center;
+  text-decoration: none;
+}
+
+section.second-scroll .activities-bottom li {
+  margin-top: 0.5em;
+}
+
+section.second-scroll .activities-top li {
+  margin-top: 4em;
+}
+
+section.second-scroll .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.second-scroll .box #box-activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 30vh;
+  height: 5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.second-scroll .box #box-activities p {
+  display: inline;
+  font-size: 150%;
+  color: #FFFFFF;
+}
+
+section.second-scroll .box #box-activities svg {
+  margin: 0.5em;
+}
+
+section.third-scroll .right-col {
+  width: 35%;
+  float: right;
+  margin-right: 6%;
+}
+
+section.third-scroll .right-col p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 150%;
+}
+
+section.third-scroll .right-col .box1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  margin-left: 10%;
+}
+
+section.third-scroll .right-col .box1 #box-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 6vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.third-scroll .right-col .box1 #box-space p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+}
+
+section.third-scroll .right-col .box2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+  margin-right: 10%;
+}
+
+section.third-scroll .right-col .box2 #box-memberships {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 6vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.third-scroll .right-col .box2 #box-memberships p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+}
+
+section.third-scroll .left-col {
+  position: absolute;
+  left: 0;
+  background: url("../images/Clubs/FSM_Rec.png") no-repeat fixed;
+  background-size: initial;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+}
+
+section.fourth-scroll .left-col {
+  width: 35%;
+  float: left;
+  margin-right: 6%;
+}
+
+section.fourth-scroll .left-col h1, section.fourth-scroll .left-col p {
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10%;
+}
+
+section.fourth-scroll .left-col h1 {
+  margin-top: 30%;
+  font-size: 350%;
+}
+
+section.fourth-scroll .left-col p {
+  font-size: 150%;
+}
+
+section.fourth-scroll .left-col .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10%;
+}
+
+section.fourth-scroll .left-col .box #box-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 6vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.fourth-scroll .left-col .box #box-more p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+  margin-left: 0%;
+}
+
+section.fourth-scroll .right-col {
+  position: absolute;
+  right: 0;
+  background: url("../images/Clubs/SwimmingClub.jpg") no-repeat right fixed;
+  background-size: contain;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+}
+
+section.fith-scroll .right-col {
+  width: 35%;
+  float: right;
+  margin-right: 6%;
+}
+
+section.fith-scroll .right-col h1, section.fith-scroll .right-col p {
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+}
+
+section.fith-scroll .right-col h1 {
+  margin-top: 30%;
+  font-size: 350%;
+}
+
+section.fith-scroll .right-col p {
+  font-size: 150%;
+}
+
+section.fith-scroll .right-col .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+}
+
+section.fith-scroll .right-col .box #box-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 6vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.fith-scroll .right-col .box #box-more p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+  margin-right: 0%;
+}
+
+section.fith-scroll .left-col {
+  position: absolute;
+  left: 0;
+  background: url("../images/Clubs/SwimmingClub.jpg") no-repeat fixed;
+  background-size: contain;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+}
+
+section.sixth-scroll .left-col {
+  width: 35%;
+  float: left;
+  margin-right: 6%;
+}
+
+section.sixth-scroll .left-col h1, section.sixth-scroll .left-col p {
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10%;
+}
+
+section.sixth-scroll .left-col h1 {
+  margin-top: 30%;
+  font-size: 350%;
+}
+
+section.sixth-scroll .left-col p {
+  font-size: 150%;
+}
+
+section.sixth-scroll .left-col .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10%;
+}
+
+section.sixth-scroll .left-col .box #box-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 6vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.sixth-scroll .left-col .box #box-more p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+  margin-left: 0%;
+}
+
+section.sixth-scroll .right-col {
+  position: absolute;
+  right: 0;
+  background: url("../images/Clubs/KidsClub.jpg") no-repeat right fixed;
+  background-size: contain;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+}
+
+section.seventh-scroll .right-col {
+  width: 35%;
+  float: right;
+  margin-right: 6%;
+}
+
+section.seventh-scroll .right-col h1, section.seventh-scroll .right-col p {
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+}
+
+section.seventh-scroll .right-col h1 {
+  margin-top: 30%;
+  font-size: 350%;
+}
+
+section.seventh-scroll .right-col p {
+  font-size: 150%;
+}
+
+section.seventh-scroll .right-col .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+}
+
+section.seventh-scroll .right-col .box #box-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 6vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.seventh-scroll .right-col .box #box-more p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+  margin-right: 0%;
+}
+
+section.seventh-scroll .left-col {
+  position: absolute;
+  left: 0;
+  background: url("../images/Clubs/HealthClub.jpg") no-repeat fixed;
+  background-size: contain;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+}
+
+section.eigth-scroll h1 {
+  color: #FFFFFF;
+  font-size: 200%;
+  text-align: center;
+}
+
+section.eigth-scroll h1 span {
+  color: #E60000;
+}
+
+section.eigth-scroll ul {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+section.eigth-scroll ul li {
+  margin: 2%;
+  margin-top: 0em;
+}
+
+section.eigth-scroll ul li img {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+section.eigth-scroll ul li p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 100%;
+  margin-top: -0.2em;
+}
+
+section.eigth-scroll .right-col {
+  float: right;
+  position: absolute;
+  border-radius: 20px;
+  right: 0;
+  background: url("../images/Mysc/Music_cover.png");
+  background-size: cover;
+  width: 865px;
+  height: 410px;
+  z-index: -1;
+  margin-right: 3%;
+  margin-top: -3em;
+}
+
+section.eigth-scroll .right-col .content-music {
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+  font-size: 250%;
+  font-weight: bold;
+  margin: auto;
+}
+
+section.eigth-scroll .right-col .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+}
+
+section.eigth-scroll .right-col .box #box-music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 6vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.eigth-scroll .right-col .box #box-music p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+  margin-right: 0%;
+}
+
+section.eigth-scroll .left-col {
+  float: left;
+  position: absolute;
+  border-radius: 20px;
+  left: 0;
+  background: url("../images/Mysc/HealthyRecipes_cover.png");
+  background-size: cover;
+  width: 865px;
+  height: 410px;
+  z-index: -1;
+  margin-left: 3%;
+  margin-top: -3em;
+}
+
+section.eigth-scroll .left-col .content-recipes {
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 1.0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+  font-size: 250%;
+  font-weight: bold;
+  margin: auto;
+}
+
+section.eigth-scroll .left-col .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+}
+
+section.eigth-scroll .left-col .box p {
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+  font-size: 150%;
+}
+
+section.eigth-scroll .left-col .box #box-recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 20vh;
+  height: 6vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.eigth-scroll .left-col .box #box-recipes p {
+  display: inline;
+  font-size: 140%;
+  color: #FFFFFF;
+  margin-right: 0%;
+}
+
+.nineth-scroll {
+  background-image: url("../images/Clubs/Maspalomas city.png");
+  background-size: cover;
+}
+
+.last-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  color: #FFFFFF;
+  height: 100%;
+}
+
+.last-scroll h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.last-scroll h2 span {
+  color: #E60000;
+}
+
+.last-scroll div {
+  text-align: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.last-scroll div button {
+  background-color: transparent;
+  border: 3px #FFFFFF solid;
+  color: #FFFFFF;
+  border-radius: 20px;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  padding: 1rem;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.last-scroll div button:hover {
+  background-color: black;
+  border-color: black;
+  color: #000000;
+  background-color: white;
+}
+
+.last-scroll .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  height: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.last-scroll .description img {
+  width: 20%;
+  border-radius: 20px;
+}
+
+.last-scroll .description ul li {
+  text-align: left;
+}
+
+.last-scroll .description ul li span {
+  color: #e60000;
+}
+
+.last-scroll .description ul li img {
+  width: 20px;
+  height: 20px;
+}
+/*# sourceMappingURL=style.css.map */

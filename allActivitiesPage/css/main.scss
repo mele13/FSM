@@ -1,0 +1,371 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+
+body { // Applies to whole page
+    background-color: #121212;
+    margin: 1.5em; // em unit = relative unit - MARGIN AND PADDING
+    font-family: 'Poppins', sans-serif;
+}
+
+a {text-decoration: none;}
+
+section {
+    height: 100vh;
+    
+    img {
+        width: 350px;
+        height: 246px;
+        margin: -0.2em;
+    }
+}
+
+.container {height: 100vh;}
+
+.slider {
+    display: flex;
+    margin-left: 2.5em;
+
+    svg {
+        position: absolute;
+        z-index: -1;
+    }
+
+    h3 {
+        z-index: 1;
+        font-size: 40px;
+        margin-top: 0em;
+        margin-left: 0.5em;
+    }
+}
+
+.separator {
+    display: flex;
+
+    svg {
+        position: absolute;
+        z-index: 0;
+    }
+
+    p {
+        z-index: 1;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 0.2em;
+        margin-left: 0.5em;
+    }
+}
+
+section.physical, section.swimming, section.kids, section.golden-age, section.disabled {
+    margin-top: 5em;
+    height: 335vh;
+
+    .fitness, .cardio, .combat, .rythm, .relax, .family {margin-left: 12%;}
+    .cardio, .combat, .rythm, .relax, .family, .all {margin-top: 3em;}
+
+    .row1, .row2, .row3 {
+        display: flex;
+        gap: 10px;
+    }
+
+    .overlay-container {
+        position: relative;
+        width: 340px;
+        height: 240px;
+        flex-basis: 100px;
+
+        img {margin: 0em;}
+
+        .overlay-red-arrow {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            svg {position: absolute;}
+
+            .overlay-red-arrow-text {
+                color: #FFF;
+                font-size: 20px;
+                padding: 16px 32px;
+            }
+        }
+
+        // x (+ der), y (+ arr)
+        .ov1 { // Bodybuilding & Spinning Elder
+            transform: translate(40%, -81%);
+            -ms-transform: translate(40%, -81%);
+        }
+        .ov2 { // Body Pump & Archery
+            transform: translate(49%, -81%);
+            -ms-transform: translate(49%, -81%);
+        }
+        .ov3 { // Cross Training
+            transform: translate(35%, -81%);
+            -ms-transform: translate(35%, -81%);
+        }
+        .ov4 { // CXWORX
+            transform: translate(66%, -81%);
+            -ms-transform: translate(66%, -81%);
+        }
+        .ov5 { // Power Jump
+            transform: translate(44%, -81%);
+            -ms-transform: translate(44%, -81%);
+        }
+        .ov6 { // GAP
+            transform: translate(117%, -81%);
+            -ms-transform: translate(117%, -81%);
+        }
+        .ov7 { // Body Tonic
+            transform: translate(52%, -81%);
+            -ms-transform: translate(52%, -81%);
+        }
+        .ov8 { // Boot Camp
+            transform: translate(49%, -81%);
+            -ms-transform: translate(49%, -81%);
+        }
+        .ov9 { // Elliptical Fit & Pilates Elder
+            transform: translate(51%, -81%);
+            -ms-transform: translate(51%, -81%);
+        }
+        .ov10 { // Fitness & Cardio  & Step-Functional
+            transform: translate(28%, -81%);
+            -ms-transform: translate(28%, -81%);
+        }
+        .ov11 { // Spinning
+            transform: translate(66%, -81%);
+            -ms-transform: translate(66%, -81%);
+        }
+        .ov12 { // Body Combat & Body Balance & Hydrotherapy
+            transform: translate(37%, -81%);
+            -ms-transform: translate(37%, -81%);
+        }
+        .ov13 { // Hiit Box
+            transform: translate(80%, -81%);
+            -ms-transform: translate(80%, -81%);
+        }
+        .ov14 { // Healthy Back
+            transform: translate(41%, -81%);
+            -ms-transform: translate(41%, -81%);
+        }
+        .ov15 { // TRX
+            transform: translate(127%, -81%);
+            -ms-transform: translate(127%, -81%);
+        }
+        .ov16 { // Zumba
+            transform: translate(80%, -81%);
+            -ms-transform: translate(80%, -81%);
+        }
+        .ov17 { // Body Balance & Tennis
+            transform: translate(86%, -81%);
+            -ms-transform: translate(86%, -81%);
+        }
+        .ov18 { // Tai Chi
+            transform: translate(83%, -81%);
+            -ms-transform: translate(83%, -81%);
+        }
+        .ov19 { // Yoga
+            transform: translate(102%, -81%);
+            -ms-transform: translate(102%, -81%);
+        }
+        .ov20 { // Family & Dance
+            transform: translate(86%, -81%);
+            -ms-transform: translate(86%, -81%);
+        }
+        .ov21 { // Aquagym
+            transform: translate(58%, -81%);
+            -ms-transform: translate(58%, -81%);
+        }
+        .ov22 { // Adults Swimming Course
+            transform: translate(6%, -81%);
+            -ms-transform: translate(6%, -81%);
+        }
+        .ov23 { // Kids Swimming Course
+            transform: translate(10%, -81%);
+            -ms-transform: translate(10%, -81%);
+        }
+        .ov24 { // Pregnant Swimming
+            transform: translate(16%, -81%);
+            -ms-transform: translate(16%, -81%);
+        }
+        .ov25 { // Independent Swimming
+            transform: translate(8%, -81%);
+            -ms-transform: translate(8%, -81%);
+        }
+        .ov26 { // Ballet
+            transform: translate(98%, -81%);
+            -ms-transform: translate(98%, -81%);
+        }
+        .ov27 { // Basketball
+            transform: translate(55%, -81%);
+            -ms-transform: translate(55%, -81%);
+        }
+        .ov28 { // Football
+            transform: translate(72%, -81%);
+            -ms-transform: translate(72%, -81%);
+        }
+        .ov29 { // Gymnastics
+            transform: translate(46%, -81%);
+            -ms-transform: translate(46%, -81%);
+        }
+        .ov30 { // Karate
+            transform: translate(85%, -81%);
+            -ms-transform: translate(85%, -81%);
+        }
+        .ov31 { // Ninja Zone
+            transform: translate(54%, -81%);
+            -ms-transform: translate(54%, -81%);
+        }
+        .ov32 { // Phit
+            transform: translate(125%, -81%);
+            -ms-transform: translate(125%, -81%);
+        }
+        .ov33 { // Playroom
+            transform: translate(60%, -81%);
+            -ms-transform: translate(60%, -81%);
+        }
+        .ov34 { // Swimming Kids
+            transform: translate(53%, -81%);
+            -ms-transform: translate(53%, -81%);
+        }
+        .ov35 { // Aquagym Elder
+            transform: translate(35%, -81%);
+            -ms-transform: translate(35%, -81%);
+        }
+        .ov36 { // Fitness Elder
+            transform: translate(15%, -81%);
+            -ms-transform: translate(15%, -81%);
+        }
+        .ov37 { // Tai Chi Elder
+            transform: translate(50%, -81%);
+            -ms-transform: translate(50%, -81%);
+        }
+        .ov38 { // Yoga Elder
+            transform: translate(59%, -81%);
+            -ms-transform: translate(59%, -81%);
+        }
+        .ov39 { // Athleticism Dis
+            transform: translate(33%, -81%);
+            -ms-transform: translate(33%, -81%);
+        }
+        .ov40 { // Basketball Dis
+            transform: translate(37%, -81%);
+            -ms-transform: translate(37%, -81%);
+        }
+        .ov41 { // Hockey Dis
+            transform: translate(53%, -81%);
+            -ms-transform: translate(53%, -81%);
+        }
+        .ov42 { // Swimming Dis
+            transform: translate(36%, -81%);
+            -ms-transform: translate(36%, -81%);
+        }
+        .ov43 { // Water Polo
+            transform: translate(53%, -81%);
+            -ms-transform: translate(53%, -81%);
+        }
+    }
+
+    .overlay-container:hover img {opacity: 0.1;}
+    .overlay-container:hover .overlay-red-arrow {opacity: 1;}
+}
+
+section.physical .row2 {
+    justify-content: center;
+    margin-left: -241px;
+    margin-top: 0.38em;
+}
+
+section.kids .row3 {margin-left: 0em;}
+
+section.swimming .row2, section.kids .row2, section.kids .row3, section.golden-age .row2 {
+    display: flex;
+    margin-top: 0.4em;
+}
+
+section.swimming .activities, section.kids .activities, 
+section.golden-age .activities, section.disabled .activities {margin-left: 12%;}
+
+section.swimming, section.golden-age, section.disabled {height: 73vh;}
+
+section.swimming {margin-top: 12em;}
+
+section.kids {height: 99.3vh;}
+
+section.swimming .row2, section.golden-age .row2, section.disabled .row2 {margin-left: 350px;}
+
+section.kids .row2, section.golden-age .row2 {margin-top: 0.3em;}
+section.kids .row3 {margin-top: 0.3em;}
+
+section.golden-age, section.disabled {.row2{margin-top: -0.05em;}}
+
+section.schedule {
+    height: 30vh;
+    .box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        #box-more {
+            display: flex;
+            border-radius: 20px;       
+            border: 5px solid #FFFFFF; // Stroke
+            margin: 10px;
+            padding: 10px;
+            width: 750px;
+            height: 180px;
+            justify-content: center;
+            align-items: center;
+    
+            .schedule {
+                display: flex;
+                position: relative;
+                width: 130px;
+                height: 130px;
+                margin-right: 2em;
+            }
+
+            .box-more-activities {
+                p {
+                    display: inline; // Avoid new line in p element
+                    font-size: 30px;
+                    color: #FFFFFF;
+                }
+
+                .box-more-activities-below {
+                    .schedule-img {
+                        width: 80px;
+                        height: 80px;
+                        margin-right: 0.5em;
+                    }
+
+                    .muscle, .swimming {margin-right: 2em;}
+                    .disabled {margin-left: -0.6em;}
+                }
+            }
+        }
+    }
+}

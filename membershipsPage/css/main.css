@@ -1,0 +1,279 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+body {
+  background-color: #121212;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* General cases */
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+section {
+  height: 100vh;
+}
+
+.mySlides-fade {
+  display: none;
+}
+
+.fl-right {
+  float: right;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+h1 span {
+  color: #E60000;
+}
+
+header h1 {
+  margin-top: -1.2em;
+  margin-left: 13.5em;
+  font-size: 50px;
+}
+
+section.top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+}
+
+section.top .container .col1 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+section.top .container .col2 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+section.top .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.top .box #box-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 58%;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.top .box #box-more .schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin-right: 2em;
+}
+
+section.top .box #box-more p {
+  font-size: 30px;
+  color: #FFFFFF;
+  width: 214px;
+  height: 130px;
+  margin-right: 0.5em;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+section.top .box #box-more ul {
+  list-style-type: none;
+  font-size: 20px;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+  width: 87%;
+}
+
+section.top .box #box-more ul li {
+  position: relative;
+  padding-left: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+section.top .box #box-more-other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 63%;
+  height: 450px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.top .box #box-more-other .schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin-right: 2em;
+}
+
+section.top .box #box-more-other p {
+  font-size: 30px;
+  color: #FFFFFF;
+  width: 214px;
+  height: 130px;
+  margin-right: 0.5em;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+section.top .box #box-more-other ul {
+  list-style-type: none;
+  font-size: 20px;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+  width: 87%;
+  height: 40%;
+}
+
+section.top .box #box-more-other ul li {
+  position: relative;
+  padding-left: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price div {
+  width: 50%;
+  border: 3px white solid;
+  padding: 0.5em;
+}
+
+.price p {
+  margin: 0.5em;
+}
+
+.price h2 {
+  text-align: center;
+}
+
+.price .membership {
+  width: 51.2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+}
+
+.price .membership div {
+  width: 40%;
+}
+
+.price .other-membership {
+  margin-top: 40px;
+}
+
+.price .other-membership ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em;
+}
+
+.price .other-membership ul ul {
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+  margin: 0;
+}
+
+section.bottom {
+  height: 50vh;
+}
+
+section.bottom h1 {
+  margin-left: 152px;
+  font-size: 40px;
+}
+
+section.bottom p, section.bottom ul {
+  color: #FFF;
+  font-size: 20px;
+  margin-left: 152px;
+}
+
+section.bottom p {
+  margin-top: -1em;
+}
+/*# sourceMappingURL=main.css.map */

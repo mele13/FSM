@@ -1,0 +1,202 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+body {
+  background-color: #121212;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  margin-bottom: 3em;
+  h1 {
+    color: #FFF;
+    margin-top: -1.2em;
+    margin-left: 15.4em;
+    font-size: 50px;    
+  }
+}
+
+.appointment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img, form {
+    width: 30%;
+    margin: 1em;
+  }
+
+  .appointment-form {
+
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5em 0;
+
+      * {
+        font-size: 1.3rem;
+        margin: 2px 0;
+      }
+
+      .btn {
+        background-color: #12121212;
+        border: 3px solid #E60000;
+        border-radius: 20px;
+        height: 50px;
+        color: white;
+        width: 50%;
+        margin: 0 auto !important;
+        transition: 0.4s all linear;
+      }
+
+      .btn:hover {
+        border: none;
+        background-color: #E60000;
+        color: #121212;
+      }
+    }
+
+    /* The container */
+    .container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 1.3rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Hide the browser's default radio button */
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 30%;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-radius: 50%;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+      background-color: #999999;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+      background-color: #FFFFFF;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .container input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .container .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #121212;
+    }
+
+    /* Create a custom checkbox */
+    .checkbox {
+      position: absolute;
+      top: 0;
+      left: 4%;
+      height: 25px;
+      width: 25px;
+      background-color: #FFF;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkbox {
+      background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkbox {
+      background-color: #2196F3;
+    }
+
+    /* Create the checkbox/indicator (hidden when not checked) */
+    .checkbox:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkbox when checked */
+    .container input:checked ~ .checkbox:after {
+      display: block;
+    }
+
+    /* Style the checkbox/indicator */
+    .container .checkbox:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid #FFF;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .appointment {
+    img {
+      display: none;
+    }
+  }
+}

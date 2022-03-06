@@ -1,0 +1,522 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+body {
+  background-color: #121212;
+  margin: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+}
+
+section img {
+  width: 350px;
+  height: 246px;
+  margin: -0.2em;
+}
+
+.container {
+  height: 100vh;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2.5em;
+}
+
+.slider svg {
+  position: absolute;
+  z-index: -1;
+}
+
+.slider h3 {
+  z-index: 1;
+  font-size: 40px;
+  margin-top: 0em;
+  margin-left: 0.5em;
+}
+
+.separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.separator svg {
+  position: absolute;
+  z-index: 0;
+}
+
+.separator p {
+  z-index: 1;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+}
+
+section.physical, section.swimming, section.kids, section.golden-age, section.disabled {
+  margin-top: 5em;
+  height: 335vh;
+}
+
+section.physical .fitness, section.physical .cardio, section.physical .combat, section.physical .rythm, section.physical .relax, section.physical .family, section.swimming .fitness, section.swimming .cardio, section.swimming .combat, section.swimming .rythm, section.swimming .relax, section.swimming .family, section.kids .fitness, section.kids .cardio, section.kids .combat, section.kids .rythm, section.kids .relax, section.kids .family, section.golden-age .fitness, section.golden-age .cardio, section.golden-age .combat, section.golden-age .rythm, section.golden-age .relax, section.golden-age .family, section.disabled .fitness, section.disabled .cardio, section.disabled .combat, section.disabled .rythm, section.disabled .relax, section.disabled .family {
+  margin-left: 12%;
+}
+
+section.physical .cardio, section.physical .combat, section.physical .rythm, section.physical .relax, section.physical .family, section.physical .all, section.swimming .cardio, section.swimming .combat, section.swimming .rythm, section.swimming .relax, section.swimming .family, section.swimming .all, section.kids .cardio, section.kids .combat, section.kids .rythm, section.kids .relax, section.kids .family, section.kids .all, section.golden-age .cardio, section.golden-age .combat, section.golden-age .rythm, section.golden-age .relax, section.golden-age .family, section.golden-age .all, section.disabled .cardio, section.disabled .combat, section.disabled .rythm, section.disabled .relax, section.disabled .family, section.disabled .all {
+  margin-top: 3em;
+}
+
+section.physical .row1, section.physical .row2, section.physical .row3, section.swimming .row1, section.swimming .row2, section.swimming .row3, section.kids .row1, section.kids .row2, section.kids .row3, section.golden-age .row1, section.golden-age .row2, section.golden-age .row3, section.disabled .row1, section.disabled .row2, section.disabled .row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+section.physical .overlay-container, section.swimming .overlay-container, section.kids .overlay-container, section.golden-age .overlay-container, section.disabled .overlay-container {
+  position: relative;
+  width: 340px;
+  height: 240px;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+
+section.physical .overlay-container img, section.swimming .overlay-container img, section.kids .overlay-container img, section.golden-age .overlay-container img, section.disabled .overlay-container img {
+  margin: 0em;
+}
+
+section.physical .overlay-container .overlay-red-arrow, section.swimming .overlay-container .overlay-red-arrow, section.kids .overlay-container .overlay-red-arrow, section.golden-age .overlay-container .overlay-red-arrow, section.disabled .overlay-container .overlay-red-arrow {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.physical .overlay-container .overlay-red-arrow svg, section.swimming .overlay-container .overlay-red-arrow svg, section.kids .overlay-container .overlay-red-arrow svg, section.golden-age .overlay-container .overlay-red-arrow svg, section.disabled .overlay-container .overlay-red-arrow svg {
+  position: absolute;
+}
+
+section.physical .overlay-container .overlay-red-arrow .overlay-red-arrow-text, section.swimming .overlay-container .overlay-red-arrow .overlay-red-arrow-text, section.kids .overlay-container .overlay-red-arrow .overlay-red-arrow-text, section.golden-age .overlay-container .overlay-red-arrow .overlay-red-arrow-text, section.disabled .overlay-container .overlay-red-arrow .overlay-red-arrow-text {
+  color: #FFF;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+
+section.physical .overlay-container .ov1, section.swimming .overlay-container .ov1, section.kids .overlay-container .ov1, section.golden-age .overlay-container .ov1, section.disabled .overlay-container .ov1 {
+  -webkit-transform: translate(40%, -81%);
+          transform: translate(40%, -81%);
+  -ms-transform: translate(40%, -81%);
+}
+
+section.physical .overlay-container .ov2, section.swimming .overlay-container .ov2, section.kids .overlay-container .ov2, section.golden-age .overlay-container .ov2, section.disabled .overlay-container .ov2 {
+  -webkit-transform: translate(49%, -81%);
+          transform: translate(49%, -81%);
+  -ms-transform: translate(49%, -81%);
+}
+
+section.physical .overlay-container .ov3, section.swimming .overlay-container .ov3, section.kids .overlay-container .ov3, section.golden-age .overlay-container .ov3, section.disabled .overlay-container .ov3 {
+  -webkit-transform: translate(35%, -81%);
+          transform: translate(35%, -81%);
+  -ms-transform: translate(35%, -81%);
+}
+
+section.physical .overlay-container .ov4, section.swimming .overlay-container .ov4, section.kids .overlay-container .ov4, section.golden-age .overlay-container .ov4, section.disabled .overlay-container .ov4 {
+  -webkit-transform: translate(66%, -81%);
+          transform: translate(66%, -81%);
+  -ms-transform: translate(66%, -81%);
+}
+
+section.physical .overlay-container .ov5, section.swimming .overlay-container .ov5, section.kids .overlay-container .ov5, section.golden-age .overlay-container .ov5, section.disabled .overlay-container .ov5 {
+  -webkit-transform: translate(44%, -81%);
+          transform: translate(44%, -81%);
+  -ms-transform: translate(44%, -81%);
+}
+
+section.physical .overlay-container .ov6, section.swimming .overlay-container .ov6, section.kids .overlay-container .ov6, section.golden-age .overlay-container .ov6, section.disabled .overlay-container .ov6 {
+  -webkit-transform: translate(117%, -81%);
+          transform: translate(117%, -81%);
+  -ms-transform: translate(117%, -81%);
+}
+
+section.physical .overlay-container .ov7, section.swimming .overlay-container .ov7, section.kids .overlay-container .ov7, section.golden-age .overlay-container .ov7, section.disabled .overlay-container .ov7 {
+  -webkit-transform: translate(52%, -81%);
+          transform: translate(52%, -81%);
+  -ms-transform: translate(52%, -81%);
+}
+
+section.physical .overlay-container .ov8, section.swimming .overlay-container .ov8, section.kids .overlay-container .ov8, section.golden-age .overlay-container .ov8, section.disabled .overlay-container .ov8 {
+  -webkit-transform: translate(49%, -81%);
+          transform: translate(49%, -81%);
+  -ms-transform: translate(49%, -81%);
+}
+
+section.physical .overlay-container .ov9, section.swimming .overlay-container .ov9, section.kids .overlay-container .ov9, section.golden-age .overlay-container .ov9, section.disabled .overlay-container .ov9 {
+  -webkit-transform: translate(51%, -81%);
+          transform: translate(51%, -81%);
+  -ms-transform: translate(51%, -81%);
+}
+
+section.physical .overlay-container .ov10, section.swimming .overlay-container .ov10, section.kids .overlay-container .ov10, section.golden-age .overlay-container .ov10, section.disabled .overlay-container .ov10 {
+  -webkit-transform: translate(28%, -81%);
+          transform: translate(28%, -81%);
+  -ms-transform: translate(28%, -81%);
+}
+
+section.physical .overlay-container .ov11, section.swimming .overlay-container .ov11, section.kids .overlay-container .ov11, section.golden-age .overlay-container .ov11, section.disabled .overlay-container .ov11 {
+  -webkit-transform: translate(66%, -81%);
+          transform: translate(66%, -81%);
+  -ms-transform: translate(66%, -81%);
+}
+
+section.physical .overlay-container .ov12, section.swimming .overlay-container .ov12, section.kids .overlay-container .ov12, section.golden-age .overlay-container .ov12, section.disabled .overlay-container .ov12 {
+  -webkit-transform: translate(37%, -81%);
+          transform: translate(37%, -81%);
+  -ms-transform: translate(37%, -81%);
+}
+
+section.physical .overlay-container .ov13, section.swimming .overlay-container .ov13, section.kids .overlay-container .ov13, section.golden-age .overlay-container .ov13, section.disabled .overlay-container .ov13 {
+  -webkit-transform: translate(80%, -81%);
+          transform: translate(80%, -81%);
+  -ms-transform: translate(80%, -81%);
+}
+
+section.physical .overlay-container .ov14, section.swimming .overlay-container .ov14, section.kids .overlay-container .ov14, section.golden-age .overlay-container .ov14, section.disabled .overlay-container .ov14 {
+  -webkit-transform: translate(41%, -81%);
+          transform: translate(41%, -81%);
+  -ms-transform: translate(41%, -81%);
+}
+
+section.physical .overlay-container .ov15, section.swimming .overlay-container .ov15, section.kids .overlay-container .ov15, section.golden-age .overlay-container .ov15, section.disabled .overlay-container .ov15 {
+  -webkit-transform: translate(127%, -81%);
+          transform: translate(127%, -81%);
+  -ms-transform: translate(127%, -81%);
+}
+
+section.physical .overlay-container .ov16, section.swimming .overlay-container .ov16, section.kids .overlay-container .ov16, section.golden-age .overlay-container .ov16, section.disabled .overlay-container .ov16 {
+  -webkit-transform: translate(80%, -81%);
+          transform: translate(80%, -81%);
+  -ms-transform: translate(80%, -81%);
+}
+
+section.physical .overlay-container .ov17, section.swimming .overlay-container .ov17, section.kids .overlay-container .ov17, section.golden-age .overlay-container .ov17, section.disabled .overlay-container .ov17 {
+  -webkit-transform: translate(86%, -81%);
+          transform: translate(86%, -81%);
+  -ms-transform: translate(86%, -81%);
+}
+
+section.physical .overlay-container .ov18, section.swimming .overlay-container .ov18, section.kids .overlay-container .ov18, section.golden-age .overlay-container .ov18, section.disabled .overlay-container .ov18 {
+  -webkit-transform: translate(83%, -81%);
+          transform: translate(83%, -81%);
+  -ms-transform: translate(83%, -81%);
+}
+
+section.physical .overlay-container .ov19, section.swimming .overlay-container .ov19, section.kids .overlay-container .ov19, section.golden-age .overlay-container .ov19, section.disabled .overlay-container .ov19 {
+  -webkit-transform: translate(102%, -81%);
+          transform: translate(102%, -81%);
+  -ms-transform: translate(102%, -81%);
+}
+
+section.physical .overlay-container .ov20, section.swimming .overlay-container .ov20, section.kids .overlay-container .ov20, section.golden-age .overlay-container .ov20, section.disabled .overlay-container .ov20 {
+  -webkit-transform: translate(86%, -81%);
+          transform: translate(86%, -81%);
+  -ms-transform: translate(86%, -81%);
+}
+
+section.physical .overlay-container .ov21, section.swimming .overlay-container .ov21, section.kids .overlay-container .ov21, section.golden-age .overlay-container .ov21, section.disabled .overlay-container .ov21 {
+  -webkit-transform: translate(58%, -81%);
+          transform: translate(58%, -81%);
+  -ms-transform: translate(58%, -81%);
+}
+
+section.physical .overlay-container .ov22, section.swimming .overlay-container .ov22, section.kids .overlay-container .ov22, section.golden-age .overlay-container .ov22, section.disabled .overlay-container .ov22 {
+  -webkit-transform: translate(6%, -81%);
+          transform: translate(6%, -81%);
+  -ms-transform: translate(6%, -81%);
+}
+
+section.physical .overlay-container .ov23, section.swimming .overlay-container .ov23, section.kids .overlay-container .ov23, section.golden-age .overlay-container .ov23, section.disabled .overlay-container .ov23 {
+  -webkit-transform: translate(10%, -81%);
+          transform: translate(10%, -81%);
+  -ms-transform: translate(10%, -81%);
+}
+
+section.physical .overlay-container .ov24, section.swimming .overlay-container .ov24, section.kids .overlay-container .ov24, section.golden-age .overlay-container .ov24, section.disabled .overlay-container .ov24 {
+  -webkit-transform: translate(16%, -81%);
+          transform: translate(16%, -81%);
+  -ms-transform: translate(16%, -81%);
+}
+
+section.physical .overlay-container .ov25, section.swimming .overlay-container .ov25, section.kids .overlay-container .ov25, section.golden-age .overlay-container .ov25, section.disabled .overlay-container .ov25 {
+  -webkit-transform: translate(8%, -81%);
+          transform: translate(8%, -81%);
+  -ms-transform: translate(8%, -81%);
+}
+
+section.physical .overlay-container .ov26, section.swimming .overlay-container .ov26, section.kids .overlay-container .ov26, section.golden-age .overlay-container .ov26, section.disabled .overlay-container .ov26 {
+  -webkit-transform: translate(98%, -81%);
+          transform: translate(98%, -81%);
+  -ms-transform: translate(98%, -81%);
+}
+
+section.physical .overlay-container .ov27, section.swimming .overlay-container .ov27, section.kids .overlay-container .ov27, section.golden-age .overlay-container .ov27, section.disabled .overlay-container .ov27 {
+  -webkit-transform: translate(55%, -81%);
+          transform: translate(55%, -81%);
+  -ms-transform: translate(55%, -81%);
+}
+
+section.physical .overlay-container .ov28, section.swimming .overlay-container .ov28, section.kids .overlay-container .ov28, section.golden-age .overlay-container .ov28, section.disabled .overlay-container .ov28 {
+  -webkit-transform: translate(72%, -81%);
+          transform: translate(72%, -81%);
+  -ms-transform: translate(72%, -81%);
+}
+
+section.physical .overlay-container .ov29, section.swimming .overlay-container .ov29, section.kids .overlay-container .ov29, section.golden-age .overlay-container .ov29, section.disabled .overlay-container .ov29 {
+  -webkit-transform: translate(46%, -81%);
+          transform: translate(46%, -81%);
+  -ms-transform: translate(46%, -81%);
+}
+
+section.physical .overlay-container .ov30, section.swimming .overlay-container .ov30, section.kids .overlay-container .ov30, section.golden-age .overlay-container .ov30, section.disabled .overlay-container .ov30 {
+  -webkit-transform: translate(85%, -81%);
+          transform: translate(85%, -81%);
+  -ms-transform: translate(85%, -81%);
+}
+
+section.physical .overlay-container .ov31, section.swimming .overlay-container .ov31, section.kids .overlay-container .ov31, section.golden-age .overlay-container .ov31, section.disabled .overlay-container .ov31 {
+  -webkit-transform: translate(54%, -81%);
+          transform: translate(54%, -81%);
+  -ms-transform: translate(54%, -81%);
+}
+
+section.physical .overlay-container .ov32, section.swimming .overlay-container .ov32, section.kids .overlay-container .ov32, section.golden-age .overlay-container .ov32, section.disabled .overlay-container .ov32 {
+  -webkit-transform: translate(125%, -81%);
+          transform: translate(125%, -81%);
+  -ms-transform: translate(125%, -81%);
+}
+
+section.physical .overlay-container .ov33, section.swimming .overlay-container .ov33, section.kids .overlay-container .ov33, section.golden-age .overlay-container .ov33, section.disabled .overlay-container .ov33 {
+  -webkit-transform: translate(60%, -81%);
+          transform: translate(60%, -81%);
+  -ms-transform: translate(60%, -81%);
+}
+
+section.physical .overlay-container .ov34, section.swimming .overlay-container .ov34, section.kids .overlay-container .ov34, section.golden-age .overlay-container .ov34, section.disabled .overlay-container .ov34 {
+  -webkit-transform: translate(53%, -81%);
+          transform: translate(53%, -81%);
+  -ms-transform: translate(53%, -81%);
+}
+
+section.physical .overlay-container .ov35, section.swimming .overlay-container .ov35, section.kids .overlay-container .ov35, section.golden-age .overlay-container .ov35, section.disabled .overlay-container .ov35 {
+  -webkit-transform: translate(35%, -81%);
+          transform: translate(35%, -81%);
+  -ms-transform: translate(35%, -81%);
+}
+
+section.physical .overlay-container .ov36, section.swimming .overlay-container .ov36, section.kids .overlay-container .ov36, section.golden-age .overlay-container .ov36, section.disabled .overlay-container .ov36 {
+  -webkit-transform: translate(15%, -81%);
+          transform: translate(15%, -81%);
+  -ms-transform: translate(15%, -81%);
+}
+
+section.physical .overlay-container .ov37, section.swimming .overlay-container .ov37, section.kids .overlay-container .ov37, section.golden-age .overlay-container .ov37, section.disabled .overlay-container .ov37 {
+  -webkit-transform: translate(50%, -81%);
+          transform: translate(50%, -81%);
+  -ms-transform: translate(50%, -81%);
+}
+
+section.physical .overlay-container .ov38, section.swimming .overlay-container .ov38, section.kids .overlay-container .ov38, section.golden-age .overlay-container .ov38, section.disabled .overlay-container .ov38 {
+  -webkit-transform: translate(59%, -81%);
+          transform: translate(59%, -81%);
+  -ms-transform: translate(59%, -81%);
+}
+
+section.physical .overlay-container .ov39, section.swimming .overlay-container .ov39, section.kids .overlay-container .ov39, section.golden-age .overlay-container .ov39, section.disabled .overlay-container .ov39 {
+  -webkit-transform: translate(33%, -81%);
+          transform: translate(33%, -81%);
+  -ms-transform: translate(33%, -81%);
+}
+
+section.physical .overlay-container .ov40, section.swimming .overlay-container .ov40, section.kids .overlay-container .ov40, section.golden-age .overlay-container .ov40, section.disabled .overlay-container .ov40 {
+  -webkit-transform: translate(37%, -81%);
+          transform: translate(37%, -81%);
+  -ms-transform: translate(37%, -81%);
+}
+
+section.physical .overlay-container .ov41, section.swimming .overlay-container .ov41, section.kids .overlay-container .ov41, section.golden-age .overlay-container .ov41, section.disabled .overlay-container .ov41 {
+  -webkit-transform: translate(53%, -81%);
+          transform: translate(53%, -81%);
+  -ms-transform: translate(53%, -81%);
+}
+
+section.physical .overlay-container .ov42, section.swimming .overlay-container .ov42, section.kids .overlay-container .ov42, section.golden-age .overlay-container .ov42, section.disabled .overlay-container .ov42 {
+  -webkit-transform: translate(36%, -81%);
+          transform: translate(36%, -81%);
+  -ms-transform: translate(36%, -81%);
+}
+
+section.physical .overlay-container .ov43, section.swimming .overlay-container .ov43, section.kids .overlay-container .ov43, section.golden-age .overlay-container .ov43, section.disabled .overlay-container .ov43 {
+  -webkit-transform: translate(53%, -81%);
+          transform: translate(53%, -81%);
+  -ms-transform: translate(53%, -81%);
+}
+
+section.physical .overlay-container:hover img, section.swimming .overlay-container:hover img, section.kids .overlay-container:hover img, section.golden-age .overlay-container:hover img, section.disabled .overlay-container:hover img {
+  opacity: 0.1;
+}
+
+section.physical .overlay-container:hover .overlay-red-arrow, section.swimming .overlay-container:hover .overlay-red-arrow, section.kids .overlay-container:hover .overlay-red-arrow, section.golden-age .overlay-container:hover .overlay-red-arrow, section.disabled .overlay-container:hover .overlay-red-arrow {
+  opacity: 1;
+}
+
+section.physical .row2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -241px;
+  margin-top: 0.38em;
+}
+
+section.kids .row3 {
+  margin-left: 0em;
+}
+
+section.swimming .row2, section.kids .row2, section.kids .row3, section.golden-age .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.4em;
+}
+
+section.swimming .activities, section.kids .activities,
+section.golden-age .activities, section.disabled .activities {
+  margin-left: 12%;
+}
+
+section.swimming, section.golden-age, section.disabled {
+  height: 73vh;
+}
+
+section.swimming {
+  margin-top: 12em;
+}
+
+section.kids {
+  height: 99.3vh;
+}
+
+section.swimming .row2, section.golden-age .row2, section.disabled .row2 {
+  margin-left: 350px;
+}
+
+section.kids .row2, section.golden-age .row2 {
+  margin-top: 0.3em;
+}
+
+section.kids .row3 {
+  margin-top: 0.3em;
+}
+
+section.golden-age .row2, section.disabled .row2 {
+  margin-top: -0.05em;
+}
+
+section.schedule {
+  height: 30vh;
+}
+
+section.schedule .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.schedule .box #box-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 750px;
+  height: 180px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.schedule .box #box-more .schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  margin-right: 2em;
+}
+
+section.schedule .box #box-more .box-more-activities p {
+  display: inline;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+section.schedule .box #box-more .box-more-activities .box-more-activities-below .schedule-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 0.5em;
+}
+
+section.schedule .box #box-more .box-more-activities .box-more-activities-below .muscle, section.schedule .box #box-more .box-more-activities .box-more-activities-below .swimming {
+  margin-right: 2em;
+}
+
+section.schedule .box #box-more .box-more-activities .box-more-activities-below .disabled {
+  margin-left: -0.6em;
+}
+/*# sourceMappingURL=main.css.map */

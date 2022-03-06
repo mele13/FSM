@@ -1,0 +1,307 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSM - Kids Club</title>
+    <!--Importing Poppins font-->
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <script src="js/articles_slider.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="../landingPage/index.html" class="logo"><img src="images/Logo_pequ.png" alt="FSM Logo"></a>
+            <svg width="1920" height="100" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1920" height="100" fill="#121212" />
+            </svg>
+            <h1>Kids Club</h1>
+        </header>
+
+        <section class="facilities">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/Carousel/KC 1 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/Carousel/KC 2 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/Carousel/KC 3 - maspalomas.jfif" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/Carousel/KC 4 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+        
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+        
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+        
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </section>
+
+        <section class="activities">
+            <h1>Our <span>activities</span></h1>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="images/Activities/Ballet.png" alt="Children Wearing Ballet Shoes">
+                    <p class="head">Ballet</p><br>
+                    <p class="content">Artistic dance for kids. Kids will learn coordination and discipline while enjoying exercise.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Basketball.png" alt="Children Playing Basketball">
+                    <p class="head">Basketball</p><br>
+                    <p class="content">Fast-paced sport that helps children learn basic coordination and team-building skills.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Dance kids.png" alt="Kids Dancing">
+                    <p class="head">Dance</p><br>
+                    <p class="content">Dancing can increase your child’s flexibility, range of motion, physical strength and stamina.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Football.PNG" alt="Kid with Football">
+                    <p class="head">Football</p><br>
+                    <p class="content">Playing football (soccer) helps kids build skills such as hard work, decision-making, etc.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Gymnastics.png" alt="Girl Doing Gymnastics">
+                    <p class="head">Gymnastics</p><br>
+                    <p class="content">Kids develop excellent physical coordination whilst maintaining good health.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Karate.png" alt="Kids Practicing Karate">
+                    <p class="head">Karate</p><br>
+                    <p class="content">Martial arts such as karate build stamina, strength and speed.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Ninja zone.png" alt="Obstacles Gym for Kids">
+                    <p class="head">Ninja Zone</p><br>
+                    <p class="content">This class combines gymnastics with martial arts. Parkour involved.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Phit.png" alt="Kids Doing Push-ups">
+                    <p class="head">Phit Kids</p><br>
+                    <p class="content">Combined physical activities that will keep your child healthy, strong and happy.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Playroom.png" alt="Playroom Area">
+                    <p class="head">Playroom</p><br>
+                    <p class="content">Daycare for children who’s parents are training.  There’s books, toys and movie theatre.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Swimming.png" alt="Kid Swimming">
+                    <p class="head">Swimming</p><br>
+                    <p class="content">Swimming classes: babies & kids. No level required.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Activities/Tennis.png" alt="Girl Playing Tennis">
+                    <p class="head">Tennis</p><br>
+                    <p class="content"> Racket sport that increases aerobic & anaerobic fitness, coordination and more!</p>
+                </div>
+    
+                <div class="grid-item">
+                    <img src="images/Activities/WaterPolo.jpg" alt="Boy Playing Waterpolo">
+                    <p class="head">Water Polo</p><br>
+                    <p class="content">Combines the speed of swimming with the strength of wrestling and strategy of soccer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="svg-article">
+                <div class="bg-svg-article">
+                    <img src="images/Articles/article-bckgr.svg">
+                    <!-- Slides 1 -->
+                    <div class="slides slide1 ArticleSlides">
+                        <div class="article-overlays overlay1">
+                            <div class="box click1-article">
+                                <div class="background-box1"></div>
+                                <p><br><br><a class="link"
+                                        href="https://journals.lww.com/acsm-healthfitness/Fulltext/2008/05000/MEDICINE_BALL_TRAINING_FOR_KIDS__Benefits,.00006.aspx">Medicine ball exercise benefits</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay2">
+                            <div class="box click2">
+                                <div class="background-box2"></div>
+                                <p><br><br><a
+                                        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4444042/">Do sports prevent pediatric obesity?</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay3">
+                            <div class="box click3">
+                                <div class="background-box3"></div>
+                                <p><br><br><a href="https://leader.pubs.asha.org/do/10.1044/moving-therapy-to-the-gym-the-benefits-of-gymnastics-for-children-with-autism/full/">Gymnastics for children with Autism</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides 2 -->
+                    <div class="slides slide2 ArticleSlides">
+                        <div class="article-overlays overlay4">
+                            <div class="box click1-article">
+                                <div class="background-box4"></div>
+                                <p><br><br><a class="link"
+                                        href="https://medlineplus.gov/exerciseforchildren.html">MedlinePlus:
+                                        Exercise for children</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay5">
+                            <div class="box click2">
+                                <div class="background-box5"></div>
+                                <p><br><br><a
+                                        href="https://www.bbc.com/news/education-57169054">Exercise could help poorer pupils</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay6">
+                            <div class="box click3">
+                                <div class="background-box6"></div>
+                                <p><br><br><a href="https://kidshealth.org/en/parents/exercise.html">KidsHealth: Kids and exercise</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides 3 -->
+                    <div class="slides slide3 ArticleSlides">
+                        <div class="article-overlays overlay7">
+                            <div class="box click1">
+                                <div class="background-box7"></div>
+                                <p><br><br><a class="link"
+                                        href="https://www.researchgate.net/profile/Marlies-Declerck-2/publication/255728666_Benefits_of_swimming_for_children_with_cerebral_palsy_A_pilot_study/links/004635208e8735fd89000000/Benefits-of-swimming-for-children-with-cerebral-palsy-A-pilot-study.pdf">Benefits of swimming for children with mental palsy</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay8">
+                            <div class="box click2">
+                                <div class="background-box8"></div>
+                                <p><br><br><a
+                                        href="https://www.researchgate.net/profile/Jean_Cote3/publication/236002408_The_Benefits_of_Sampling_Sports_During_Childhood/links/55b7785d08ae092e9657175c.pdf">Benefits of sampling sports during childhood</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay9">
+                            <div class="box click3">
+                                <div class="background-box9"></div>
+                                <p><br><br><a href="https://repository.canterbury.ac.uk/item/88281/benefits-of-swimming-for-young-children">Swimming and children</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>art_slider()</script>
+        </section>
+
+        <section class="info">
+            <h1>Club's <span>schedule</span></h1>
+            <ul>
+                <li>Monday - Friday <span>-></span> 06:30 - 21:00h</li>
+                <li>Saturday <span>-></span> 08:00 - 20:00h</li>
+                <li>Sunday / Holiday <span>-></span> 10:00 - 18:00h</li>            
+            </ul>
+            <div class="info-final">
+                <div class="info-final-phone" style="float: left;">
+                    <img src="images/Icons/Phone.png" alt="Phone Icon" width="50" height="50">
+                    <p>928 76 01 23</p>
+                </div>            
+                <div class="info-final-mail" style="float: right;">
+                    <img src="images/Icons/Arroba.png" alt="Email Icon" width="50" height="50">
+                    <p>maspalomasKidsC@fsm.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="box">
+                <div id="box-more">                    
+                    <p>Check each activitie's schedule</p>
+                    <a href="/downloads/this is an example of download.txt" download>
+                        <img class="schedule" src="images/Icons/Kids.png" alt="Swimming Icon">
+                    </a>        
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

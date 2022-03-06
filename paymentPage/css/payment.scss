@@ -1,0 +1,144 @@
+body{
+    margin: 1.5em;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.logo{
+    position: absolute;
+}
+
+form{
+    color: #FFFFFF;
+    font-size: x-large;
+}
+.card{
+    border-radius: 20px;
+    display: inline-flex;
+}
+.submit{
+    
+    border-radius: 10px;
+    border: 4px solid #E60000;
+    color: #FFFFFF;
+    background-color: transparent;
+    height: 1.3cm;
+    width: 5cm;
+    cursor: pointer;
+    display: block;
+    margin:auto;
+  }
+
+textarea{
+  border-radius: 5px;
+}
+
+.text{
+    height: 25px;
+    width: 10cm;
+}
+.date_text {
+  height: 25px;
+  width: 8cm;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.date{
+    height: 25px;
+    width: 5cm;
+}
+
+.cvv{
+    margin-left: 50px;
+    height: 25px;
+    width: 3cm;
+}
+  .checkbox{
+    display: flex;
+    position: relative;
+    display: inline-flex;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    flex-direction: row-reverse;
+  }
+  .checkbox input {
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkmark_box {
+
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    
+  }
+/* On mouse-over, add a grey background color */
+.contaicheckboxner:hover input ~ .checkmark_box {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox input:checked ~ .checkmark_box {
+    background-color: transparent;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark_box:after {
+    content: "";
+    position: relative;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox input:checked ~ .checkmark_box:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox .checkmark_box:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  div{
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .border{
+    border: solid 3px white;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+    width: 700px;
+    height: 530px;
+  }
+  .border2{
+    border: solid 3px white;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+    width: 700px;
+    height: 570px;
+  }

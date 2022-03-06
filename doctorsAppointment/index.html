@@ -1,0 +1,103 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FSM - Doctor's Appointment</title>
+	<!--Importing Poppins font-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<!--Importing css file-->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+</head>
+
+<body>
+	
+	<header>
+		<a href="../landingPage/index.html" class="logo"><img src="images/Logo_pequ.png" alt="FSM Logo"></a>
+		<h1>Make your appointment</h1>
+	</header>
+
+	<div class="appointment">
+
+		<img class="doctors" src="images/Appointment.PNG" alt="imagen" width="503" height="719">
+	
+		<form class="appointment-form">
+			
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input id="email" class="text" name="email" style="border-radius: 10px;"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input id="name" class="text" name="name" style="border-radius: 10px;"></input>
+			</div>
+
+			<div class="form-group">
+				<label for="yourself">Tell us about yourself:</label>
+				<textarea id="yourself" class="tell_us" name="youtself" cols="40" rows="5" style="border-radius: 10px;"></textarea>
+			</div>
+
+			<div class="form-group">
+				<label class="container">
+					Chiropractor
+					<input type="radio" name="radio-button" id="chiropractor">
+					<span class="checkmark"></span>
+				</label>
+
+				<label class="container">
+					Nutritionist
+					<input type="radio" name="radio-button" id="nutritionist">
+					<span class="checkmark"></span>
+				</label>
+
+				<label class="container">
+					Sports medicine
+					<input type="radio" name="radio-button" id="sports-medicine">
+					<span class="checkmark"></span>
+				</label>
+			</div>
+
+			<div class="form-group">
+				<label class="container">I accept the Privacy Policy and Terms of Service
+					<input type="checkbox">
+					<span class="checkbox"></span>
+				</label>
+			</div>
+
+			<div class="form-group">
+				<input type="button" value="Make appointment" class="btn">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSM - Health Club</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <script src="js/articles_slider.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="../landingPage/index.html" class="logo"><img src="images/Logo_pequ.png" alt="FSM Logo"></a>
+            <svg width="1920" height="100" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1920" height="100" fill="#121212" />
+            </svg>
+            <h1>Health Club</h1>
+        </header>
+
+        <section class="facilities">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="images/Carousel/HC 1 - maspalomas_black.png" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="images/Carousel/HC 2 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="images/Carousel/HC 3 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="images/Carousel/HC 4 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="images/Carousel/HC 5 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="images/Carousel/HC 6 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="images/Carousel/HC 7 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="images/Carousel/HC 8 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="images/Carousel/HC 9 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="images/Carousel/HC 10 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </section>
+
+        <section class="specialists">
+            <h1>Our <span>specialists</span></h1>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <!-- container -->
+                    <img src="images/Doctors/Chiropractor.png" alt="Children Wearing Ballet Shoes">
+                    <p class="head">Chiropractor</p><br>
+                    <p class="content">Uses their hands to help relieve problems with bones, muscles and joints.</p>
+                    <div class="hover-middle">
+                        <div class="box">
+                            <a href="../doctorsAppointment/index.html">
+                                <div id="hover-text">
+                                    <p>Make an appointment</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Doctors/Nutritionist.png" alt="Children Playing Basketball">
+                    <p class="head">Nutritionist</p><br>
+                    <p class="content">Supports you in your diet and the type of food you can consume.</p>
+                    <div class="hover-middle">
+                        <div class="box">
+                            <a href="../doctorsAppointment/index.html">
+                                <div id="hover-text">
+                                    <p>Make an appointment</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Doctors/Sports medicine.png" alt="Kids Dancing">
+                    <p class="head">Sports Medicine Doctor</p><br>
+                    <p class="content">Helps you restore function after an injury so you can get moving again as soon as
+                        possible.</p>
+                    <div class="hover-middle hover-middle-3">
+                        <div class="box">
+                            <a href="../doctorsAppointment/index.html">
+                                <div id="hover-text">
+                                    <p>Make an appointment</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="info">
+            <h1>Club's <span>schedule</span></h1>
+            <ul>
+                <li>Monday - Friday <span>-></span> 09:00 - 16:00h</li>
+                <li>Saturday <span>-></span> 10:00 - 14:00h</li>
+            </ul>
+            <div class="info-final">
+                <div class="info-final-phone" style="float: left;">
+                    <img src="images/Info/Phone.png" alt="Phone Icon" width="50" height="50">
+                    <p>928 76 01 24</p>
+                </div>
+                <div class="info-final-mail" style="float: right;">
+                    <img src="images/Info/Arroba.png" alt="Email Icon" width="50" height="50">
+                    <p>maspalomasHealthC@fsm.com</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

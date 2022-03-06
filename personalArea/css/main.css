@@ -1,0 +1,153 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+/* Body and HTML */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* General cases */
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1 {
+  color: #FFF;
+  margin-top: -1.2em;
+  margin-left: 18em;
+  font-size: 50px;
+}
+
+header .log-out {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1.5em;
+  margin-right: 3em;
+}
+
+section.user {
+  height: 100vh;
+}
+
+section.user .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+}
+
+section.user .container .col1 {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+section.user .container .col1 .line-red-vertical {
+  position: absolute;
+  width: 687px;
+  height: 0px;
+  left: 535px;
+  top: 967px;
+  border: 3px solid #E60000;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  left: 8%;
+  top: 62%;
+}
+
+section.user .container .col1 .list {
+  position: relative;
+  top: 18%;
+}
+
+section.user .container .col1 ul {
+  list-style-type: none;
+  color: #FFF;
+}
+
+section.user .container .col1 ul li {
+  margin-bottom: 6px;
+}
+
+section.user .container .col1 .line-white {
+  position: absolute;
+  width: 355px;
+  height: 0px;
+  left: 127px;
+  top: 784px;
+  border: 3px solid #FFFFFF;
+  top: 72.5%;
+  left: 0;
+  margin-left: 1.65em;
+}
+
+section.user .container .col1 .line-white-2 {
+  position: absolute;
+  width: 355px;
+  height: 0px;
+  left: 127px;
+  top: 895px;
+  border: 3px solid #FFFFFF;
+  top: 86.2%;
+  left: 0;
+  margin-left: 1.65em;
+}
+
+section.user .container .col2 {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+}
+
+section.user .container .col2 p {
+  color: #FFF;
+  position: relative;
+  left: 28%;
+  margin-top: 0.6em;
+}
+
+section.user .container .col2 .line-red-horizontal {
+  position: absolute;
+  width: 1532px;
+  height: 0px;
+  left: 201px;
+  top: 190px;
+  border: 3px solid #E60000;
+}
+
+section.user .container .col2 svg {
+  margin-left: 3.1em;
+}
+/*# sourceMappingURL=main.css.map */

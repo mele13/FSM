@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSM - Health & Fitness Centers</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Scripts -->
+    <script src="js/javascript.js"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="head-and-background-container">
+        <header>
+            <nav id="navigation-bar">
+                <ul>
+                    <li id="burger-icon" class="burger-icon" onclick="showOrHideMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </li>
+
+                    <div id="menu-level-1">
+                        <!-- Clubs -->
+                        <li class="no-nav-item">Clubs</li>
+                        <li class="nav-item clubs">
+                            <a href="../fitnessClub/index.html"><img src="images/Dropdown/Fitness.png"
+                                    alt="Dumbbells and Bottle of Water" width="60" height="60"></a>
+                        </li>
+                        <li class="nav-item clubs">
+                            <a href="../swimmingClub/index.html"><img src="images/Dropdown/Swimming.png"
+                                    alt="Swimming Cap and Goggles" width="60" height="60"></a>
+                        </li>
+                        <li class="nav-item clubs">
+                            <a href="../kidsClub/"><img src="images/Dropdown/Teddy.png" alt="Teddybear" width="60"
+                                    height="60"></a>
+                        </li>
+                        <li class="nav-item clubs">
+                            <a href="../healthClub/"><img src="images/Dropdown/Health.png" alt="Heart and Brain"
+                                    width="60" height="60"></a>
+                        </li>
+                        <!-- Gyms -->
+                        <li class="no-nav-item">Gyms</li>
+                        <li class="nav-item">
+                            <a href="../currentlyBuilding/index.html"><img src="images/Dropdown/Gym building.png" alt="Heart and Brain" width="60"
+                                    height="60"></a>
+                        </li>
+                        <!-- Contact Us -->
+                        <li class="no-nav-item">Contact Us</li>
+                        <li class="nav-item">
+                            <a href="../currentlyBuilding/index.html"><img src="images/Dropdown/Phone.png" alt="Heart and Brain" width="60"
+                                    height="60"></a>
+                        </li>
+                        <!-- Activities -->
+                        <li class="no-nav-item">Activities</li>
+                        <li class="nav-item">
+                            <a href="../allActivitiesPage/index.html"><img src="images/Dropdown/Activities.png" alt="Heart and Brain" width="60"
+                                    height="60"></a>
+                        </li>
+                        <!-- Corporate -->
+                        <li class="no-nav-item">Corporate</li>
+                        <li class="nav-item">
+                            <a href="../workerArea/index.html"><img src="images/Dropdown/Employee.png" alt="Heart and Brain" width="60"
+                                    height="60"></a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+
+            <a href="../landingPage/index.html" class="logo" class="landing"><img src="images/Logo_pequ.png" alt="FSM Logo"></a>
+
+            <div class="buttons">
+                <a href="../Ejempollo web/index.html" class="home">Home</a>
+                <a href="../logIn/index.html" class="logIn">Log in</a>
+            </div>
+        </header>
+        <!-- HEADER -->
+
+        <div class="first-scroll">
+
+            <div class="right-col">
+                <ul>
+                    <li>
+                        <h1>GET <span>FIT</span></h1>
+                        <!--h1 to h6 -->
+                    </li>
+                    <li>
+                        <h1>GET <span>STRONG</span></h1>
+                    </li>
+                    <li>
+                        <h1>GET <span>MOTIVATED</span></h1>
+                    </li>
+                </ul>
+
+                <div class="box">
+                    <a href="../membershipsPage/index.html">
+                        <div id="box-join">
+                            <p>Join Now</p>
+                        </div>
+                    </a>
+                </div>
+
+                <svg class="scroll-arrow" width="186" height="267" viewBox="0 0 186 267" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+                    <path
+                        d="M51.2751 160.542L93.3974 160.542H133.93V122.393C135.52 110.472 158.568 112.061 158.568 122.393V145.441C165.721 132.725 184 139.878 184 145.441L183.205 201.869C184 205.843 167.31 214.585 158.568 201.869V222.533C153.799 237.634 133.93 229.686 133.93 222.533V186.769H51.2751V222.533C51.2751 235.249 26.6376 234.454 26.6376 222.533V201.869C18.69 214.585 3.58952 207.432 2 201.869V145.441C7.56332 132.725 25.048 139.083 26.6376 145.441V122.393C26.6376 110.472 51.2751 112.856 51.2751 122.393V160.542Z"
+                        stroke="white" stroke-width="3" />
+                    <path d="M93.3973 160.542V264.655M93.3973 264.655L88.6288 259.886H98.1659L93.3973 264.655Z"
+                        stroke="white" stroke-width="3" />
+                    <path d="M93.3973 0V159.761V160.541" stroke="white" stroke-width="3" />
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="second-scroll">
+        <div class="svg-wrapper">
+            <svg width="1920" height="29" viewBox="0 0 1920 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 0H684.461H871.496L956.239 13.8028L1033.5 0H1251.59H1920V13.8028H1251.59H1033.5L956.239 29L871.496 13.8028H684.461H0V0Z"
+                    fill="#E60000" />
+            </svg>
+
+        </div>
+        <ul class="activities-top">
+            <li class="type-activity">
+                <a href="../fitnessClub/index.html"><img src="images/Activities/Physical activities.png" alt="Man and Woman Exercising"></a>
+                <p>Physical</p>
+            </li>
+
+            <li class="type-activity">
+                <a href="../swimmingClub/index.html"><img src="images/Activities/Aquatic activities.png" alt="Woman in Pool"></a>
+                <p>Aquatic</p>
+            </li>
+
+            <li class="type-activity">
+                <a href="../kidsClub/index.html"><img src="images/Activities/Kids' activities.png" alt="Kid with Dumbbells"></a>
+                <p>Kids</p>
+            </li>
+        </ul>
+
+        <ul class="activities-bottom">
+            <li class="type-activity">
+                <a href="../goldenAgePage/index.html"><img src="images/Activities/Golden age activities.png"
+                        alt="Elder Man and Woman Exercising"></a>
+                <p>Golden age</p>
+            </li>
+
+            <li class="type-activity">
+                <a href="../disabledPage/index.html"><img src="images/Activities/Disabled activities.png" alt="Amputee Exercising"></a>
+                <p>Disabled</p>
+            </li>
+
+            <li class="type-activity">
+                <a href="../rehabPage/index.html"><img src="images/Activities/Rehab activities.png" alt="Woman With Back Pain"></a>
+                <p>Rehab</p>
+            </li>
+
+        </ul>
+
+        <div class="box">
+            <a href="../allActivitiesPage/index.html">
+                <div id="box-activities">
+                    <svg class="grid" width="39" height="38" viewBox="0 0 39 38" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.4375 4.75C2.4375 4.12011 2.69431 3.51602 3.15143 3.07062C3.60855 2.62522 4.22853 2.375 4.875 2.375H9.75C10.3965 2.375 11.0165 2.62522 11.4736 3.07062C11.9307 3.51602 12.1875 4.12011 12.1875 4.75V9.5C12.1875 10.1299 11.9307 10.734 11.4736 11.1794C11.0165 11.6248 10.3965 11.875 9.75 11.875H4.875C4.22853 11.875 3.60855 11.6248 3.15143 11.1794C2.69431 10.734 2.4375 10.1299 2.4375 9.5V4.75ZM14.625 4.75C14.625 4.12011 14.8818 3.51602 15.3389 3.07062C15.796 2.62522 16.416 2.375 17.0625 2.375H21.9375C22.584 2.375 23.204 2.62522 23.6611 3.07062C24.1182 3.51602 24.375 4.12011 24.375 4.75V9.5C24.375 10.1299 24.1182 10.734 23.6611 11.1794C23.204 11.6248 22.584 11.875 21.9375 11.875H17.0625C16.416 11.875 15.796 11.6248 15.3389 11.1794C14.8818 10.734 14.625 10.1299 14.625 9.5V4.75ZM26.8125 4.75C26.8125 4.12011 27.0693 3.51602 27.5264 3.07062C27.9835 2.62522 28.6035 2.375 29.25 2.375H34.125C34.7715 2.375 35.3915 2.62522 35.8486 3.07062C36.3057 3.51602 36.5625 4.12011 36.5625 4.75V9.5C36.5625 10.1299 36.3057 10.734 35.8486 11.1794C35.3915 11.6248 34.7715 11.875 34.125 11.875H29.25C28.6035 11.875 27.9835 11.6248 27.5264 11.1794C27.0693 10.734 26.8125 10.1299 26.8125 9.5V4.75ZM2.4375 16.625C2.4375 15.9951 2.69431 15.391 3.15143 14.9456C3.60855 14.5002 4.22853 14.25 4.875 14.25H9.75C10.3965 14.25 11.0165 14.5002 11.4736 14.9456C11.9307 15.391 12.1875 15.9951 12.1875 16.625V21.375C12.1875 22.0049 11.9307 22.609 11.4736 23.0544C11.0165 23.4998 10.3965 23.75 9.75 23.75H4.875C4.22853 23.75 3.60855 23.4998 3.15143 23.0544C2.69431 22.609 2.4375 22.0049 2.4375 21.375V16.625ZM14.625 16.625C14.625 15.9951 14.8818 15.391 15.3389 14.9456C15.796 14.5002 16.416 14.25 17.0625 14.25H21.9375C22.584 14.25 23.204 14.5002 23.6611 14.9456C24.1182 15.391 24.375 15.9951 24.375 16.625V21.375C24.375 22.0049 24.1182 22.609 23.6611 23.0544C23.204 23.4998 22.584 23.75 21.9375 23.75H17.0625C16.416 23.75 15.796 23.4998 15.3389 23.0544C14.8818 22.609 14.625 22.0049 14.625 21.375V16.625ZM26.8125 16.625C26.8125 15.9951 27.0693 15.391 27.5264 14.9456C27.9835 14.5002 28.6035 14.25 29.25 14.25H34.125C34.7715 14.25 35.3915 14.5002 35.8486 14.9456C36.3057 15.391 36.5625 15.9951 36.5625 16.625V21.375C36.5625 22.0049 36.3057 22.609 35.8486 23.0544C35.3915 23.4998 34.7715 23.75 34.125 23.75H29.25C28.6035 23.75 27.9835 23.4998 27.5264 23.0544C27.0693 22.609 26.8125 22.0049 26.8125 21.375V16.625ZM2.4375 28.5C2.4375 27.8701 2.69431 27.266 3.15143 26.8206C3.60855 26.3752 4.22853 26.125 4.875 26.125H9.75C10.3965 26.125 11.0165 26.3752 11.4736 26.8206C11.9307 27.266 12.1875 27.8701 12.1875 28.5V33.25C12.1875 33.8799 11.9307 34.484 11.4736 34.9294C11.0165 35.3748 10.3965 35.625 9.75 35.625H4.875C4.22853 35.625 3.60855 35.3748 3.15143 34.9294C2.69431 34.484 2.4375 33.8799 2.4375 33.25V28.5ZM14.625 28.5C14.625 27.8701 14.8818 27.266 15.3389 26.8206C15.796 26.3752 16.416 26.125 17.0625 26.125H21.9375C22.584 26.125 23.204 26.3752 23.6611 26.8206C24.1182 27.266 24.375 27.8701 24.375 28.5V33.25C24.375 33.8799 24.1182 34.484 23.6611 34.9294C23.204 35.3748 22.584 35.625 21.9375 35.625H17.0625C16.416 35.625 15.796 35.3748 15.3389 34.9294C14.8818 34.484 14.625 33.8799 14.625 33.25V28.5ZM26.8125 28.5C26.8125 27.8701 27.0693 27.266 27.5264 26.8206C27.9835 26.3752 28.6035 26.125 29.25 26.125H34.125C34.7715 26.125 35.3915 26.3752 35.8486 26.8206C36.3057 27.266 36.5625 27.8701 36.5625 28.5V33.25C36.5625 33.8799 36.3057 34.484 35.8486 34.9294C35.3915 35.3748 34.7715 35.625 34.125 35.625H29.25C28.6035 35.625 27.9835 35.3748 27.5264 34.9294C27.0693 34.484 26.8125 33.8799 26.8125 33.25V28.5Z"
+                            fill="white" />
+                    </svg>
+                    <p>All activities</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="third-scroll">
+        <div class="right-col">
+            <p>FSM is a company that offers fully equipped space to practice sport while being secure and feeling
+                confident.<br>
+                Each person has their own needs. We try to adapt to your needs and help you through your fitness
+                journey.<br><br>
+                Our main Gym, FSM Maspalomas is a multi-level facility that houses an expansive selection of
+                equipment.
+                All of our gyms pretend to imitate Maspalomas’ FSM as it’s one of the Canary Island’s VIP fitness
+                center.<br><br>
+                Whether your passion is cardio, weight training, bodybuilding, powerlifting, CrossFit, swimming or
+                functional
+                training; we have all the equipment and necessary machines you need to obtain results.<br><br>
+                Make sure you also check all the activities and courses available at FSM.
+            </p>
+
+            <div class="box1">
+                <a href="../currentlyBuilding/index.html">
+                    <div id="box-space">
+                        <p>View space</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box2">
+                <a href="../membershipsPage/index.html">
+                    <div id="box-memberships">
+                        <p>Check memberships</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="left-col"></div>
+    </section>
+    <section class="fourth-scroll">
+        <div class="left-col">
+            <h1>Fitness Club</h1>
+            <p>Personal trainers, directed classes, activities...<br><br>
+                More than 22 courses, specific exercise-oriented rooms: muscle building, cardio, spinning,
+                relaxing...<br><br>
+                Check the club’s page to know more!
+            </p>
+
+            <div class="box">
+                <a href="../fitnessClub/index.html">
+                    <div id="box-more">
+                        <p>More</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="right-col"></div>
+    </section>
+
+    <!-- Fith scroll - Swimming Club-->
+    <section class="fith-scroll">
+        <div class="right-col">
+            <h1>Swimming Club</h1>
+            <p>Various water activities available every day. Top notch swimming coaches.<br><br>
+                Specialized coaches carry out activities for children and disabled people.<br><br>
+                Check the club’s page to know more!
+            </p>
+
+            <div class="box">
+                <a href="../swimmingClub/index.html">
+                    <div id="box-more">
+                        <p>More</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="left-col"></div>
+    </section>
+
+    <!-- Sixth scroll - Kids Club-->
+    <section class="sixth-scroll">
+        <div class="left-col">
+            <h1>Kids Club</h1>
+            <p>This club is not only intended to take care of the children whose parents are training, but to
+                improve
+                child’s health through exercise.<br><br>
+                There are more than 10 activities for children suited to their age group.<br><br>
+                Learning through playing and child development activities are carried out in the Playroom.
+            </p>
+
+            <div class="box">
+                <a href="../kidsClub/index.html">
+                    <div id="box-more">
+                        <p>More</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="right-col"></div>
+    </section>
+
+    <!-- Seventh scroll - Health Club-->
+    <section class="seventh-scroll">
+        <div class="right-col">
+            <h1>Health Club</h1>
+            <p>Sports clinic offers services such as massages, nutritional help, physical assesments, rehab
+                assistance, etc.</p>
+
+            <div class="box">
+                <a href="../healthClub/index.html">
+                    <div id="box-more">
+                        <p>More</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="left-col"></div>
+    </section>
+
+    <!-- Eigth scroll - Servicies, Recipes & Music-->
+    <section class="eigth-scroll">
+        <h1>Our <span>services</span></h1>
+
+        <div class="services">
+            <ul class="services-top">
+                <li class="parking">
+                    <img src="images/Icons/Parking.png" alt="Free Parking Icon">
+                    <p>Free Parking</p>
+                </li>
+
+                <li class="bar">
+                    <img src="images/Icons/Cafeteria.png" alt="Steamy Coffee Icon">
+                    <p>Healthy Bar</p>
+                </li>
+
+                <li class="personal-trainers">
+                    <img src="images/Icons/Personal trainer.png" alt="Personal Trainer Helping Client Icon">
+                    <p>Personal Trainers</p>
+                </li>
+
+                <li class="special-training-rooms">
+                    <img src="images/Icons/Dumbbell.png" alt="Set of Dumbbells Icon">
+                    <p>Special Training<br>Rooms</p>
+                </li>
+
+                <li class="boxing">
+                    <img src="images/Icons/Boxing.png" alt="Boxing Glove Icon">
+                    <p>Training Box</p>
+                </li>
+
+                <li class="directed-activities">
+                    <img src="images/Icons/Activities.png" alt="Man and Woman Exercising Icon">
+                    <p>Directed Activities</p>
+                </li>
+
+                <li class="daycare">
+                    <img src="images/Icons/Daycare.png" alt="Woman and Kid Icon">
+                    <p>Daycare</p>
+                </li>
+            </ul>
+
+            <ul class="services-bottom">
+                <li class="swimming-classes">
+                    <img src="images/Icons/Swimming classes.png" alt="Person Swimming Icon">
+                    <p>Swimming Classes<br>for Children and Adults</p>
+                </li>
+
+                <li class="swimming-babies">
+                    <img src="images/Icons/Baby_swimming.png" alt="Duckling Swimming Icon">
+                    <p>Swimming for Babies</p>
+                </li>
+
+                <li class="spa-and-heated-pool">
+                    <img src="images/Icons/Swimming_pool.png" alt="Pool Ladder Icon">
+                    <p>Spa and Heated Pool</p>
+                </li>
+
+                <li class="chiropractor">
+                    <img src="images/Icons/Chiropractor.png" alt="Chiropractor Massaging Icon">
+                    <p>Chiropractor</p>
+                </li>
+
+                <li class="nutritionist">
+                    <img src="images/Icons/Nutritionist.png" alt="Apple and Ruler Icon">
+                    <p>Nutritionist</p>
+                </li>
+
+                <li class="sports-medicine">
+                    <img src="images/Icons/Sports_medicine.png" alt="Doctor Treating Athlete Icon">
+                    <p>Sports Medicine</p>
+                </li>
+
+                <li class="sauna">
+                    <img src="images/Icons/Spa.png" alt="Woman out of Sauna Icon">
+                    <p>Sauna</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-col">
+            <p class="content-music">Top workout music</p>
+
+            <div class="box">
+                <a href="../currentlyBuilding/index.html">
+                    <div id="box-music">
+                        <p>Check music</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="left-col">
+            <p class="content-recipes">Check our recommended healthy recipes!</p>
+
+            <div class="box">
+                <a href="../currentlyBuilding/index.html">
+                    <div id="box-recipes">
+                        <p>Healthy recipes</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nineth scroll - Mysc-->
+    <section class="nineth-scroll">
+        <div class="last-scroll">
+            <h2>We’re located in Maspalomas, 2 Av. Touroperador Kuoni nb. 2 in Las Palmas de Gran Canaria. Come <span>visit</span> us!
+            </h2>
+            <div>
+                <a href="../currentlyBuilding/index.html">
+                    <button>Enlace</button>
+                </a>
+            </div>
+            <div class="description">                
+                <ul>
+                    <li>Club’s <span>schedule</span></li>
+                    <li>Monday - Friday <span>-></span> 06:00 - 22:00h </li>
+                    <li>Saturday <span>-></span> 08:00 - 20:00h </li>
+                    <li>Sunday / Holiday <span>-></span> 10:00 - 18:00h </li>
+                    <li><img src="images/Icons/Phone.png" alt="Phone Icon" width="40" height="40">928 76 01 20</li>
+                    <li><img src="images/Icons/Arroba.png" alt="Email Icon" width="40" height="40">maspalomasFSM@fsm.com</li>
+                </ul>
+                <img src="images/Maspalomas map.png" alt="Mapa">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

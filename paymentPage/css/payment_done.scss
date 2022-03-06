@@ -1,0 +1,33 @@
+body{
+    margin: 1.5em;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: #e60000;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.3cm;
+}
+h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 0.8cm;
+}
+.done{
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+}
+div{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+.border{
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+}

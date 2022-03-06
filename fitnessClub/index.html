@@ -1,0 +1,702 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSM - Fitness Club</title>
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <script src="js/slider.js"></script>
+    <script src="js/overlay_click.js"></script>
+    <script src="js/achievements_slider.js"></script>
+    <script src="js/articles_slider.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../landingPage/index.html" class="logo"><img src="images/Logo_pequ.png" alt="FSM Logo"></a>
+        <h1>Fitness Club</h1>
+    </header>
+
+    <section class="facilities">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/Carousel/FC 1 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/Carousel/FC 2 - maspaloma.jpg" width="1920" height="850" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/Carousel/FC 3 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/Carousel/FC 4 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/Carousel/FC 5 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/Carousel/FC 6 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides('mySlides',-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides('mySlides',1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="mySlides-dot dot" onclick="changeActiveSlide('mySlides', 0, 0)"></span>
+            <span class="mySlides-dot dot" onclick="changeActiveSlide('mySlides', 1, 0)"></span>
+            <span class="mySlides-dot dot" onclick="changeActiveSlide('mySlides', 2, 0)"></span>
+            <span class="mySlides-dot dot" onclick="changeActiveSlide('mySlides', 3, 0)"></span>
+            <span class="mySlides-dot dot" onclick="changeActiveSlide('mySlides', 4, 0)"></span>
+            <span class="mySlides-dot dot" onclick="changeActiveSlide('mySlides', 5, 0)"></span>
+        </div>
+
+        <!-- Config slider -->
+        <script>changeActiveSlide("mySlides", 0, 0)</script>
+    </section>
+
+    <section class="activities">
+        <h1>Our <span>courses</span></h1>
+
+        <div class="slideshow-container">
+            <div class="mySlides2 fade2">
+                <div class="grid">
+                    <!-- Body Balance Grid -->
+                    <div class="grid-item">
+                        <span class="img">
+                            <img src="images/Activities/Body-Balance.png" alt="People Training Balance">
+                        </span>
+                        <p class="head">Body Balance</p><br>
+                        <p class="content">Motivating blend of Tai Chi, Pilates and Yoga that will help improve your
+                            mind and body.</p>
+                    </div>
+                    <!-- Bodybuilding Grid -->
+                    <div class="grid-item">
+                        <span class="img">
+                            <img src="images/Activities/Bodybuilding.png" alt="Bodybuilder Posing - Back Shot">
+                        </span>
+                        <p class="head">Bodybuilding</p><br>
+                        <p class="content">Develop your body through exercise. Fit body, fit mind.</p>
+                    </div>
+                    <!-- Body Combat Grid -->
+                    <div class="grid-item">
+                        <span class="img">
+                            <img src="images/Activities/Body combat.png" alt="Woman Punching Punching Bag">
+                        </span>
+                        <p class="head">Body Combat</p><br>
+                        <p class="content">Alternate between kickboxing and boxing classes. Reduce your stress whilst
+                            burning calories.</p>
+                    </div>
+                    <!-- Body Pump Grid -->
+                    <div class="grid-item">
+                        <span class="img">
+                            <img src="images/Activities/Body pump.png" alt="Woman Lifting Light Dumbbells">
+                        </span>
+                        <p class="head">Body Pump</p><br>
+                        <p class="content">Exhaust your muscle using light weights to develop lean, athletic muscles.
+                        </p>
+                    </div>
+                    <!-- Body Tonic Grid -->
+                    <div class="grid-item">
+                        <span class="img">
+                            <img src="images/Activities/Body tonic.png"
+                                alt="Group of People Training with Medicinal Balls">
+                        </span>
+                        <p class="head">Body Tonic</p><br>
+                        <p class="content">Training program in which different aerobic and tonic exercises are combined.
+                        </p>
+                    </div>
+                    <!-- Boot Camp Grid -->
+                    <div class="grid-item">
+                        <span class="img">
+                            <img src="images/Activities/Boot camp.png" alt="Group of People Training with Dumbbells">
+                        </span>
+                        <p class="head">Boot Camp</p><br>
+                        <p class="content">High-intensity mix of aerobic, strength training and speed elements.</p>
+                    </div>
+                    <!-- Cross Training Grid -->
+                    <div class="grid-item">
+                        <span class="img">
+                            <img src="images/Activities/Cross training.png" alt="Person Lifting Round Dumbbell">
+                        </span>
+                        <p class="head">Cross Training</p><br>
+                        <p class="content">Vary your fitness program by combining different training routines.</p>
+                    </div>
+                    <!-- CXWORX Grid -->
+                    <div class="grid-item">
+                        <span class="img">
+                            <img src="images/Activities/Cxworx.png" alt="Man Stretching With Resistance Tube">
+                        </span>
+                        <p class="head">CXWORX</p><br>
+                        <p class="content">Build strength, stability and endurance in the muscles that support your
+                            core.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade2">
+                <div class="grid">
+                    <!-- Elliptical Fit Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Elliptical fit.png" alt="Pregnant Woman Swimming - Underwater Shot">
+                        <p class="head">Elliptical Fit</p><br>
+                        <p class="content">Aerobic workout to strengthen your heart, lungs and muscles.</p>
+                    </div>
+                    <!-- Family Physical Activity Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Family physical activity.png"
+                            alt="Pregnant Woman Swimming - Underwater Shot">
+                        <p class="head">Family Physical Activity</p><br>
+                        <p class="content">Approach new physical challenges together.</p>
+                    </div>
+                    <!-- Fitness & grid-itemio Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Fitness & cardio.png" alt="Group of People Exercising">
+                        <p class="head">Fitness & Cardio</p><br>
+                        <p class="content">Combined grid-itemio exercises to strenghten your heart, loose weight, etc.
+                        </p>
+                    </div>
+                    <!-- GAP Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Gap.png" alt="Group of People Exercising">
+                        <p class="head">GAP</p><br>
+                        <p class="content">Directed toning activity to work out glutes, abdomen and legs.
+                            &#8249;&#8249;Glúteos, Abdomen, Piernas&#8250;&#8250; </p>
+                    </div>
+                    <!-- Healthy Back Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Healthy back.png" alt="People Stretching Their Backs">
+                        <p class="head">Healthy Back</p><br>
+                        <p class="content">Strengthen the muscles that support your spine, improving yout mobility.</p>
+                    </div>
+                    <!-- Hiit Box Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Hiit box.png" alt="Man with Hand Protection - Boxing Position">
+                        <p class="head">Hiit Box</p><br>
+                        <p class="content">High intensity interaval training to improve endurance, burn fat, gain
+                            strength, etc.</p>
+                    </div>
+                    <!-- Pilates Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Pilates.png" alt="Woman Practising Pilates">
+                        <p class="head">Pilates</p><br>
+                        <p class="content">Low-impact exercies that combines deep breathing with gentle stretching.</p>
+                    </div>
+                    <!-- Power Jump Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Power jump.png" alt="Person Jumping Over Boxes">
+                        <p class="head">Power Jump</p><br>
+                        <p class="content">Train your explosive strength, speed strength and vertical power jumping
+                            power.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides2 fade2">
+                <div class="grid">
+                    <!-- Spinning Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Spinning.png" alt="Spinning Class">
+                        <p class="head">Spinning</p><br>
+                        <p class="content">Combines fast-paced cycling and strategic lighter rest intervals.</p>
+                    </div>
+                    <!-- Step-Functional Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Step-functional.png" alt="People Exercising with Steps">
+                        <p class="head">Step-Functional</p><br>
+                        <p class="content">Get all the benefits of a high-intensity cardio workout without putting
+                            stress on your joints.</p>
+                    </div>
+                    <!-- Tai Chi Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Tai chi.png" alt="Woman Practising Tai Chi">
+                        <p class="head">Tai Chi</p><br>
+                        <p class="content">Gentle form of exercise that helps maintaining strength, flexibility and
+                            balance.</p>
+                    </div>
+                    <!-- TRX Grid -->
+                    <div class="grid-item">
+                        <img src="images/Activities/Trx.png" alt="People Training in Trx Class">
+                        <p class="head">TRX</p><br>
+                        <p class="content">Total resistance exercise. TRX uses a single strap hung in half. Burn fat,
+                            build strength and improve your heart health.</p>
+                    </div>
+                    <!-- Yoga Grid -->
+                    <div class="grid-item grid-item-2-3">
+                        <img src="images/Activities/Yoga.png" alt="Yoga Class">
+                        <p class="head">Yoga</p><br>
+                        <p class="content">Yoga improves strength, balance and flexibility through slow movements and
+                            deep breathing.</p>
+                    </div>
+                    <!-- Zumba Grid -->
+                    <div class="grid-item grid-item-3-4">
+                        <img src="images/Activities/Zumba.png" alt="People Doing Zumba">
+                        <p class="head">Zumba</p><br>
+                        <p class="content">Zumba routines incorporate fast and slow rythms to help improve
+                            cardiovascular fitness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="prev2" onclick="plusSlides('mySlides2',-1)">&#10094;</a>
+            <a class="next2" onclick="plusSlides('mySlides2',1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="mySlides2-dot dot2" onclick="changeActiveSlide('mySlides2', 0, 0)"></span>
+            <span class="mySlides2-dot dot2" onclick="changeActiveSlide('mySlides2', 1, 0)"></span>
+            <span class="mySlides2-dot dot2" onclick="changeActiveSlide('mySlides2', 2, 0)"></span>
+        </div>
+
+        <div class="clarification">All gym equipment is at your disposal regardless of the classes offered *</div>
+
+        <!-- Config slider -->
+        <script>changeActiveSlide("mySlides2", 0, 0)</script>
+    </section>
+
+    <section class="trainers">
+        <h1>Choose your <span>training</span></h1>
+        <p>FSM offers an extensive training service that adjusts to any need and objective you may have.</p>
+
+        <div class="training-container">
+            <!-- Personal Training -->
+            <div class="training-content">
+                <div class="training-content-main">
+                    <h4>Personal<br>Training</h4>
+                    <div class="training-content-mobile">
+                        <p>Personal Training</p>
+                        <ul>
+                            <li>Interview and initial assessment. Objectives proposal.</li>
+                            <li>Schedule appointment with nutritionist.</li>
+                            <li>Evaluation of composition and body fat.</li>
+                            <li>Establishment of diet and routine.</li>
+                            <li>Programmed weekly sessions.</li>
+                            <li>Routine and progress control every 15 days.</li>
+                            <li>Constant contact with your coach to solve doubts.</li>
+                        </ul>
+                        <a href="#" class="button-link">I'm interested</a>
+                    </div>
+                </div>
+
+                <div class="training-content-hover">
+                    <p>Personal Training</p>
+                    <ul>
+                        <li>Interview and initial assessment. Objectives proposal.</li>
+                        <li>Schedule appointment with nutritionist.</li>
+                        <li>Evaluation of composition and body fat.</li>
+                        <li>Establishment of diet and routine.</li>
+                        <li>Programmed weekly sessions.</li>
+                        <li>Routine and progress control every 15 days.</li>
+                        <li>Constant contact with your coach to solve doubts.</li>
+                    </ul>
+                    <div class="box">
+                        <a href="#" class="button-link">
+                            <p>I'm interested</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Group Training -->
+            <div class="training-content">
+                <div class="training-content-main">
+                    <h4>Group<br>Training</h4>
+                    <div class="training-content-mobile">
+                        <p>Group Training</p>
+                        <ul>
+                            <li>Train with your partner, your family and/or your friends.</li>
+                            <li>Objectives proposal.</li>
+                            <li>Activities program sketch.</li>
+                            <li>Programmed weekly sessions.</li>
+                            <li>Up to 10 members.</li>
+                            <li>Special bond for FSM non-members. Activity: 2€ / 1h</li>
+                        </ul>
+                        <a href="#" class="button-link">I'm interested</a>
+                    </div>
+                </div>
+
+                <div class="training-content-hover">
+                    <p>Group Training</p>
+                    <ul>
+                        <li>Train with your partner, your family and/or your friends.</li>
+                        <li>Objectives proposal.</li>
+                        <li>Activities program sketch.</li>
+                        <li>Programmed weekly sessions.</li>
+                        <li>Up to 10 members.</li>
+                        <li>Special bond for FSM non-members. Activity: 2€ / 1h</li>
+                    </ul>
+                    <div class="box">
+                        <a href="#" class="button-link">
+                            <p>I'm interested</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Online Training -->
+            <div class="training-content">
+                <div class="training-content-main">
+                    <h4>Online<br>Training</h4>
+                    <div class="training-content-mobile">
+                        <p>Online Training</p>
+                        <ul>
+                            <li>Interview and initial assessment. Objectives proposal.</li>
+                            <li>Schedule appointment with nutritionist.</li>
+                            <li>Evaluation of composition and body fat.</li>
+                            <li>Establishment of diet and routine.</li>
+                            <li>Routine and progress control every 15 days.</li>
+                            <li>Constant contact with your coach to solve doubts.</li>
+                        </ul>
+                        <p>* All the interviews and controls can be held online. Exception: nutritionist appointment.
+                        </p>
+
+                        <a href="#" class="button-link">I'm interested</a>
+                    </div>
+                </div>
+
+                <div class="training-content-hover">
+                    <p>Online Training</p>
+                    <ul>
+                        <li>Interview and initial assessment. Objectives proposal.</li>
+                        <li>Schedule appointment with nutritionist.</li>
+                        <li>Evaluation of composition and body fat.</li>
+                        <li>Establishment of diet and routine.</li>
+                        <li>Routine and progress control every 15 days.</li>
+                        <li>Constant contact with your coach to solve doubts.</li>
+                    </ul>
+                    <p class="extra-info">* All the interviews and controls can be held online. Exception: nutritionist
+                        appointment.
+                    </p><br>
+                    <div class="box">
+                        <a href="#" class="button-link">
+                            <p>I'm interested</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="objective">
+        <h1>What's your <span>objective</span>?</h1>
+        <p>Every person joining a gym has an objective. It doesn’t matter if you’re here to lose weight, build muscle or
+            just for fun.
+            There’s always an objective and here at FSM we’ll help you focus on it.</p>
+
+        <!-- Left side selectors -->
+        <div class="objective-content">
+            <div class="toggle" onclick="first_click('objetive', 0)">
+                <div class="separator">
+                    <svg width="679" height="60" viewBox="0 0 679 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 10C0 4.47715 4.47715 0 10 0H647.364C650.153 0 652.815 1.16475 654.708 3.21308L679 29.5L654.72 56.6641C652.823 58.7867 650.111 60 647.264 60H10C4.47717 60 0 55.5228 0 50V10Z"
+                            fill="white" />
+                    </svg>
+                    <p>Health / Fitness</p>
+                </div>
+            </div>
+
+            <div class="toggle" onclick="first_click('objetive', 1)">
+                <div class="separator">
+                    <svg width="679" height="60" viewBox="0 0 679 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 10C0 4.47715 4.47715 0 10 0H647.364C650.153 0 652.815 1.16475 654.708 3.21308L679 29.5L654.72 56.6641C652.823 58.7867 650.111 60 647.264 60H10C4.47717 60 0 55.5228 0 50V10Z"
+                            fill="white" />
+                    </svg>
+                    <p>Postural correction and Rehabilitation of injuries</p>
+                </div>
+            </div>
+
+            <div class="toggle" onclick="first_click('objetive', 2)">
+                <div class="separator">
+                    <svg width="679" height="60" viewBox="0 0 679 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 10C0 4.47715 4.47715 0 10 0H647.364C650.153 0 652.815 1.16475 654.708 3.21308L679 29.5L654.72 56.6641C652.823 58.7867 650.111 60 647.264 60H10C4.47717 60 0 55.5228 0 50V10Z"
+                            fill="white" />
+                    </svg>
+                    <p>Muscle / Strength gain</p>
+                </div>
+            </div>
+
+            <div class="toggle" onclick="first_click('objetive', 3)">
+                <div class="separator">
+                    <svg width="679" height="60" viewBox="0 0 679 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 10C0 4.47715 4.47715 0 10 0H647.364C650.153 0 652.815 1.16475 654.708 3.21308L679 29.5L654.72 56.6641C652.823 58.7867 650.111 60 647.264 60H10C4.47717 60 0 55.5228 0 50V10Z"
+                            fill="white" />
+                    </svg>
+                    <p>Weight / Fat loss</p>
+                </div>
+            </div>
+
+            <div class="toggle" onclick="first_click('objetive', 4)">
+                <div class="separator">
+                    <svg width="679" height="60" viewBox="0 0 679 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 10C0 4.47715 4.47715 0 10 0H647.364C650.153 0 652.815 1.16475 654.708 3.21308L679 29.5L654.72 56.6641C652.823 58.7867 650.111 60 647.264 60H10C4.47717 60 0 55.5228 0 50V10Z"
+                            fill="white" />
+                    </svg>
+                    <p>High intensity training / HIIT</p>
+                </div>
+            </div>
+
+            <div class="toggle" onclick="first_click('objetive', 5)">
+                <div class="separator">
+                    <svg width="679" height="60" viewBox="0 0 679 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 10C0 4.47715 4.47715 0 10 0H647.364C650.153 0 652.815 1.16475 654.708 3.21308L679 29.5L654.72 56.6641C652.823 58.7867 650.111 60 647.264 60H10C4.47717 60 0 55.5228 0 50V10Z"
+                            fill="white" />
+                    </svg>
+                    <p>Sports preparations / Oppositions</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side overlays -->
+        <div class="objective-overlays overlay1">
+            <div class="box click1 objetive">
+                <div class="background-box1"></div>
+                <p><br><br><br><br>Improve your health, fitness, increase your energy and feel better.</p>
+            </div>
+        </div>
+
+        <div class="objective-overlays overlay2">
+            <div class="box click2 objetive">
+                <div class="background-box2"></div>
+                <p><br><br><br><br>Recover and forget about the pain. Keep enjoying and improving.</p>
+            </div>
+        </div>
+
+        <div class="objective-overlays overlay3">
+            <div class="box click3 objetive">
+                <div class="background-box3"></div>
+                <p><br><br><br><br>Increase your muscle mass, develop strength and get the body you've always wanted.
+                </p>
+            </div>
+        </div>
+
+        <div class="objective-overlays overlay4">
+            <div class="box click4 objetive">
+                <div class="background-box4"></div>
+                <p><br><br>Lose weight in an effective, fast and safe way. We will create a habit of eating, healthy
+                    living and
+                    training so that after meeting your goals you can maintain them.</p>
+            </div>
+        </div>
+
+        <div class="objective-overlays overlay5">
+            <div class="box click5 objetive">
+                <div class="background-box5"></div>
+                <p><br><br>High intensity workouts: the most effective for burning fat and gaining strength, power and
+                    endurance. Always 100% adapted and progressive.
+                    Improve yourself!.</p>
+            </div>
+        </div>
+
+        <div class="objective-overlays overlay6">
+            <div class="box click6 objetive">
+                <div class="background-box6"></div>
+                <p><br><br>If you want to improve in a specific sport or overcome oppositions. Programs 100%
+                    personalized to your needs and goals to achieve your best self.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <h1>Our client's <span>achievements</span>?</h1>
+        <p>When you feel proud of achieving your goals, we do too.
+            I can’t... I have no time to train... I’ll start monday... I can do it at home... These were not their
+            excuses. Are their yours?</p>
+
+        <div class="achievement-slider" style="max-width:1080px">
+            <img class="AchSlides" src="images/Achievements/Client 1.jpg" alt="Client Achievements - Man"
+                style="width: 100%;">
+            <img class="AchSlides" src="images/Achievements/Client 2.jpg" alt="Client Achievements - Man"
+                style="width: 100%;">
+            <img class="AchSlides" src="images/Achievements/Client 3.jpg" alt="Client Achievements - Woman"
+                style="width: 100%;">
+            <img class="AchSlides" src="images/Achievements/Client 4.jpg" alt="Client Achievements - Woman"
+                style="width: 100%;">
+            <img class="AchSlides" src="images/Achievements/Client 5.jpg" alt="Client Achievements - Man"
+                style="width: 100%;">
+            <img class="AchSlides" src="images/Achievements/Client 6.jpg" alt="Client Achievements - Woman"
+                style="width: 100%;">
+        </div>
+
+        <script>ach_slider()</script>
+    </section>
+
+    <section class="articles">
+        <div class="svg-article">
+            <div class="bg-svg-article">
+                <img src="images/article-bckgr.svg">
+                <!-- Slides 1 -->
+                <div class="slides slide1 ArticleSlides">
+                    <div class="article-overlays overlay1">
+                        <div class="box click1-article">
+                            <div class="background-box1"></div>
+                            <p><br><br><a class="link"
+                                    href="https://www.degruyter.com/document/doi/10.2202/1949-6605.1572/html">The social
+                                    benefits of intramural sports</a></p>
+                        </div>
+                    </div>
+                    <div class="article-overlays overlay2">
+                        <div class="box click2">
+                            <div class="background-box2"></div>
+                            <p><br><br><a
+                                    href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001800.pub2/full">Heart
+                                    failure exercise rehab</a></p>
+                        </div>
+                    </div>
+                    <div class="article-overlays overlay3">
+                        <div class="box click3">
+                            <div class="background-box3"></div>
+                            <p><br><br><a href="https://www.bmj.com/content/308/6939/1291.short">Health, disease and
+                                    sport</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slides 2 -->
+                <div class="slides slide2 ArticleSlides">
+                    <div class="article-overlays overlay4">
+                        <div class="box click1-article">
+                            <div class="background-box4"></div>
+                            <p><br><br><a class="link"
+                                    href="https://link.springer.com/article/10.2165/00007256-198401020-00004">Endorphins and exercise</a></p>
+                        </div>
+                    </div>
+                    <div class="article-overlays overlay5">
+                        <div class="box click2">
+                            <div class="background-box5"></div>
+                            <p><br><br><a
+                                    href="https://link.springer.com/article/10.2165/00007256-200939060-00004">The antidepressive effects of exercise</a></p>
+                        </div>
+                    </div>
+                    <div class="article-overlays overlay6">
+                        <div class="box click3">
+                            <div class="background-box6"></div>
+                            <p><br><br><a href="https://link.springer.com/article/10.2165/00007256-199009060-00001">Exercise and mental health</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slides 3 -->
+                <div class="slides slide3 ArticleSlides">
+                    <div class="article-overlays overlay7">
+                        <div class="box click1">
+                            <div class="background-box7"></div>
+                            <p><br><br><a class="link"
+                                    href="https://www.gq-magazine.co.uk/lifestyle/article/workout-motivation-tips">Building health habits</a></p>
+                        </div>
+                    </div>
+                    <div class="article-overlays overlay8">
+                        <div class="box click2">
+                            <div class="background-box8"></div>
+                            <p><br><br><a
+                                    href="https://www.nia.nih.gov/health/infographics/diet-and-exercise-choices-today-healthier-tomorrow#:~:text=Eat%20plenty%20of%20fruits%20and,strength%2C%20balance%2C%20and%20flexibility.">Diet and exercise</a></p>
+                        </div>
+                    </div>
+                    <div class="article-overlays overlay9">
+                        <div class="box click3">
+                            <div class="background-box9"></div>
+                            <p><br><br><a href="https://www.news24.com/health24/fitness/news/20-of-the-best-exercise-tips-20171030">Health24:
+                                Exercise tips</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>art_slider()</script>
+    </section>
+    <!-- 
+    <section class="news">
+
+        <div class="news-content">
+            
+            <div class="news-content-item">
+                Box
+            </div>
+            
+            <div class="news-content-item">
+                Box
+            </div>
+            
+            <div class="news-content-item">
+                Box
+            </div>
+            
+        </div>
+
+    </section> -->
+
+    <section class="info">
+        <h1>Club's <span>schedule</span></h1>
+        <ul>
+            <li>Monday - Friday <span>-></span> 06:00 - 22:00h</li>
+            <li>Saturday <span>-></span> 08:00 - 20:00h</li>
+            <li>Sunday / Holiday <span>-></span> 10:00 - 18:00h</li>            
+        </ul>
+        <div class="info-final">
+            <div class="info-final-phone" style="float: left;">
+                <img src="images/Info/Phone.png" alt="Phone Icon" width="50" height="50">
+                <p>928 76 01 21</p>
+            </div>            
+            <div class="info-final-mail" style="float: right;">
+                <img src="images/Info/Arroba.png" alt="Email Icon" width="50" height="50">
+                <p>maspalomasFitnessC@fsm.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule">
+        <div class="box">
+            <div id="box-more">                    
+                <p>Check each activitie's schedule</p>
+                <a href="/downloads/this is an example of download.txt" download>
+                    <img class="schedule" src="images/PhysicalAct.png" alt="Swimming Icon">
+                </a>        
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+body {
+  background-color: #121212;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* General cases */
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+section {
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+h1 span {
+  color: #E60000;
+}
+
+header {
+  height: 15vh;
+}
+
+header h1 {
+  margin-top: -1.2em;
+  margin-left: 12.5em;
+  font-size: 50px;
+}
+
+section.first-info {
+  margin: 1.5em;
+  height: 60vh;
+}
+
+section.first-info .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.first-info .top .AchSlides {
+  width: 628px;
+  height: 441px;
+  border-radius: 20px;
+  float: left;
+}
+
+section.first-info .top p {
+  font-size: 30px;
+  color: #FFF;
+  width: 1000px;
+  height: 441px;
+  margin-left: 0.5em;
+  text-align: center;
+}
+
+section.second-info {
+  font-size: 30px;
+}
+
+section.second-info h1 {
+  margin-left: 152px;
+}
+
+section.second-info p {
+  margin-top: -0.5em;
+  margin-left: 152px;
+  color: #FFF;
+  width: 1400px;
+  height: 304;
+  margin-bottom: 2em;
+}
+
+section.second-info .box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.second-info .box #box-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  border: 5px solid #FFFFFF;
+  padding: 10px;
+  width: 800px;
+  height: 268px;
+}
+
+section.second-info .box #box-more p {
+  display: inline;
+  font-size: 30px;
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  float: left;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 0em;
+}
+
+section.bottom {
+  display: block;
+  height: 40vh;
+  margin-top: 3em;
+}
+
+section.bottom .p-bottom-text {
+  width: 963px;
+  height: 150px;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 400px;
+  margin-top: 3em;
+  color: #FFF;
+}
+
+section.bottom .p-bottom-text span {
+  color: #E60000;
+}
+
+section.bottom .boxj {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.bottom .boxj #box-activities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  border: 5px solid #E60000;
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.bottom .boxj #box-activities p {
+  margin-top: 0em;
+  display: inline;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=main.css.map */

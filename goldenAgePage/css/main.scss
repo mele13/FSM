@@ -1,0 +1,303 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+body { // Applies to whole page
+    background-color: #121212;
+    //margin: 1.5em; // em unit = relative unit - MARGIN AND PADDING
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General cases */
+a { 
+    text-decoration: none;
+    color: #FFF;
+}
+
+section {height: 100vh}
+
+.container {height: 100vh;}
+
+h1 {    
+    color: #FFFFFF;
+
+    span {
+        color: #E60000;
+    }
+}
+
+header {
+    height: 15vh;
+    h1 {
+        margin-top: -1.2em;
+        margin-left: 12.5em;
+        font-size: 50px;
+    }
+}
+
+section.first-info {
+    margin: 1.5em;
+    height: 60vh;
+
+    .top-bt {
+        color: #FFF;
+        font-size: 30px;
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+    
+    .top {
+        display: flex;
+        align-content: center;
+        .AchSlides {
+            width: 628px;
+            height: 441px;
+            border-radius: 20px;
+            float: left;
+        }
+
+        p {
+            font-size: 30px;
+            color: #FFF;
+            width: 1000px;
+            height: 441px;
+            margin-left: 0.5em;
+            text-align: center;
+        }
+    }    
+}
+
+section.second-info {
+    font-size: 30px;
+
+    h1 {
+        margin-left: 152px;
+    }
+
+    .grid {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 350px); // 3 Columns - width
+        grid-template-rows: repeat(3, 380px); // 3 Rows - height
+        grid-gap: 50px 180px;
+        text-align: center;
+        height: 850px;
+    
+        .grid-item {
+            border: thin #FFFFFF solid;
+            padding: 10px;
+            transition: .5s ease;
+            backface-visibility: hidden;
+
+            img {
+                width: 225px;
+                height: 154px;
+                margin-top: 20px;
+            }
+            
+            p {
+                color: #FFFFFF;
+                margin-top: -0.2em;
+                margin-bottom: -1em;
+            }
+    
+            p.head {font-size: 30px;}    
+            p.content {font-size: 20px;}
+        }
+    }
+
+    .all-activities {        
+        .p-activities {
+            color: #FFF;
+            font-size: 20px;
+            margin-left: 7.5em;
+        }
+    
+        .box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+    
+            #box-activities {
+                display: flex;
+                border-radius: 10px;       
+                border: 5px solid #E60000; // Stroke
+                margin: 10px;
+                padding: 10px;
+                width: 28vh;
+                height: 5vh;
+                justify-content:center;
+                align-items: center;
+        
+                p {
+                    display: inline; // Avoid new line in p element
+                    font-size: 25px;
+                    color: #FFFFFF;
+        
+                }
+                
+                svg {
+                    margin: 0.5em;
+                    margin-left: -0.5em;
+                }
+            }
+        }
+    }
+}
+
+section.articles {
+    height: 35vh;
+    margin-top: 300px;
+
+    .svg-article {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        height: 171px;
+        display: flex;
+
+        .bg-svg-article {
+            height: 100px;
+            width: 100%;
+            text-align: center;
+
+            img {width: 60%;}
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    .slides {
+        display: flex;
+        text-align: center;
+        margin-top: -10.5em;
+        justify-content: space-between;
+        width: 50%;
+        margin: auto;
+        position: relative;
+        top: -171px;
+    }
+
+    .article-overlays {        
+        .box-article {
+            display: flex;
+            border-radius: 20px;       
+            border: 3px solid #FFF; // Stroke
+            margin: 10px;
+            padding: 10px;
+            width: 260px;
+            height: 110px;
+        
+            p {
+                font-size: 15px;
+                color: #FFFFFF;
+                margin: 1em;
+                margin-top: -2.8em;
+                width: 106px;
+                text-align: center;
+            }
+
+            .background-box1, .background-box2, .background-box3, .background-box4, .background-box5, .background-box6,
+            .background-box7, .background-box8, .background-box9 {               
+                width: 131px;
+                height: 130px;
+                border-radius: 20px;
+                margin-top: -0.85em;
+                margin-left: -0.85em;
+                border-bottom: 3px solid #FFF;
+                border-top: 3px solid #FFF;
+                border-left: 3px solid #FFF;
+                background-size: cover;
+            }
+
+            // Slide 1
+            .background-box1 {background-image: url('../images/Articles/Osteoarthritis.jpg');}
+            .background-box2 {background-image: url('../images/Articles/Physical\ exercise\ older\ adults.jpg');}
+            .background-box3 {background-image: url('../images/Articles/Exercise\ and\ the\ elderly.png');}
+            // Slide 2
+            .background-box4 {background-image: url('../images/Articles/Gait\ stability.jfif');}
+            .background-box5{background-image: url('../images/Articles/Promoting\ exercise.jfif');}
+            .background-box6 {background-image: url('../images/Articles/Spinning\ elder.jpg');}
+            // Slide 3
+            .background-box7 {background-image: url('../images/Articles/Isolation.jpg');}
+            .background-box8 {background-image: url('../images/Articles/Bbc\ exercise.jpg');}
+            .background-box9 {background-image: url('../images/Articles/Mental\ health.jpg');}
+        }
+    }
+}
+
+section.bottom {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+
+    p {
+        width: 1180px;
+        height: 310px;
+        text-align: center;
+        color: #FFF;
+        span {
+            color: #E60000;
+        }
+    }
+}
+
+section.schedule {
+    height: 40vh;
+    .box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        #box-more {
+            display: flex;
+            border-radius: 20px;       
+            border: 5px solid #FFFFFF; // Stroke
+            margin: 10px;
+            padding: 10px;
+            width: 431px;
+            height: 188px;
+            justify-content: center;
+            align-items: center;
+    
+            .schedule {
+                display: flex;
+                position: relative;
+                width: 130px;
+                height: 130px;
+                margin-right: 2em;
+            }
+
+            p {
+                display: inline; // Avoid new line in p element
+                font-size: 30px;
+                color: #FFFFFF;
+                width: 214px;
+                height: 130px;
+                margin-right: 0.5em;
+                text-align: center;
+            }
+        }
+    }
+}

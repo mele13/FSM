@@ -1,0 +1,266 @@
+<!--
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSM - Swimming Club</title>
+    <!--Importing Poppins font-->
+    <!--Importing Poppins font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!--Importing css file-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Scripts -->
+    <script src="js/articles_slider.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="../landingPage/index.html" class="logo"><img src="images/Logo_pequ.png" alt="FSM Logo"></a>
+            <svg width="1920" height="100" viewBox="0 0 1920 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1920" height="100" fill="#121212" />
+            </svg>
+            <h1>Swimming Club</h1>
+        </header>
+
+        <section class="facilities">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/Carousel/SC 1 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/Carousel/SC 2 - maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+        
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/Carousel/SC 3- maspalomas.jpg" width="1920" height="850" style="width:100%">
+                </div>
+        
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            </div>
+            <br>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+        
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+        
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+        
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </section>
+
+        <section class="activities">
+            <h1>Our <span>activities</span></h1>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="images/Aquagym.png" alt="People Training in Pool - Underwater Shot">
+                    <p class="head">Aquagym</p><br>
+                    <p class="content">Aquatic fitness that focuses on stimulating cardiovascular activity and muscle
+                        toning.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Adults course.png" alt="Woman Swimming - Underwater Shot">
+                    <p class="head">Adults Swimming Course</p><br>
+                    <p class="content">Swimming classes for adults. No level required.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Kids course.png" alt="Kid Swimming - Underwater Shot">
+                    <p class="head">Kids Swimming Course</p><br>
+                    <p class="content">Swimming classes for kids. No level required.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Pregnant Swimming.png" alt="Pregnant Woman Swimming - Underwater Shot">
+                    <p class="head">Pregnant Swimming</p><br>
+                    <p class="content">Swimming can be a relief for pregnancy aches and pains.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Free swimming.png" alt="Swimming Pool Lane - Underwater Shot">
+                    <p class="head">Independent Swimming</p><br>
+                    <p class="content">Adjust the pool to you. Your lane, your time.</p>
+                </div>
+
+                <div class="grid-item">
+                    <img src="images/Hidrotherapy.png" alt="Hydrotherapy Jet">
+                    <p class="head">Hydrotherapy</p><br>
+                    <p class="content">Relish on the physical relaxation and recreation. Enter a meditative state.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="svg-article">
+                <div class="bg-svg-article">
+                    <img src="images/Articles/article-bckgr.svg">
+                    <!-- Slides 1 -->
+                    <div class="slides slide1 ArticleSlides">
+                        <div class="article-overlays overlay1">
+                            <div class="box click1-article">
+                                <div class="background-box1"></div>
+                                <p><br><br><a class="link"
+                                        href="https://www.tandfonline.com/doi/abs/10.1081/JAS-120018706">Benefits of swimming in Asthma</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay2">
+                            <div class="box click2">
+                                <div class="background-box2"></div>
+                                <p><br><br><a
+                                        href="https://www.jstor.org/stable/25662845">Swimming during pregnancy</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay3">
+                            <div class="box click3">
+                                <div class="background-box3"></div>
+                                <p><br><br><a href="http://cronos.usv.ro/fefs/pagini/revista_1/archive/volume_IV_issue_2/10%20Aquagym_exercises_contribution_at_the_health_of_adults_aida_petrea.pdf">Aquagym and its contribution to health</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides 2 -->
+                    <div class="slides slide2 ArticleSlides">
+                        <div class="article-overlays overlay4">
+                            <div class="box click1-article">
+                                <div class="background-box4"></div>
+                                <p><br><br><a class="link"
+                                        href="http://ncbi.nlm.nih.gov/pmc/articles/PMC4049052/">Effects of Hydrotherapy</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay5">
+                            <div class="box click2">
+                                <div class="background-box5"></div>
+                                <p><br><br><a
+                                        href="https://books.google.es/books?hl=es&lr=&id=ZPB6DwAAQBAJ&oi=fnd&pg=PT8&dq=swimming+benefits+adults&ots=cCdHVXmDG9&sig=Dga0-9u-CQ1NjFKdSIXnE8TVpl0&redir_esc=y#v=onepage&q=swimming%20benefits%20adults&f=false">Mastering swimming</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay6">
+                            <div class="box click3">
+                                <div class="background-box6"></div>
+                                <p><br><br><a href="https://link.springer.com/article/10.2165/00007256-199009060-00001">Exercise and mental health</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slides 3 -->
+                    <div class="slides slide3 ArticleSlides">
+                        <div class="article-overlays overlay7">
+                            <div class="box click1">
+                                <div class="background-box7"></div>
+                                <p><br><br><a class="link"
+                                        href="https://www.gq-magazine.co.uk/lifestyle/article/workout-motivation-tips">Building health habits</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay8">
+                            <div class="box click2">
+                                <div class="background-box8"></div>
+                                <p><br><br><a
+                                        href="https://www.nia.nih.gov/health/infographics/diet-and-exercise-choices-today-healthier-tomorrow#:~:text=Eat%20plenty%20of%20fruits%20and,strength%2C%20balance%2C%20and%20flexibility.">Diet and exercise</a></p>
+                            </div>
+                        </div>
+                        <div class="article-overlays overlay9">
+                            <div class="box click3">
+                                <div class="background-box9"></div>
+                                <p><br><br><a href="https://www.news24.com/health24/fitness/news/20-of-the-best-exercise-tips-20171030">Health24:
+                                    Exercise tips</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>art_slider()</script>
+        </section>
+
+        <section class="info">
+            <h1>Club's <span>schedule</span></h1>
+            <ul>
+                <li>Monday - Friday <span>-></span> 06:00 - 22:00h</li>
+                <li>Saturday <span>-></span> 08:00 - 20:00h</li>
+                <li>Sunday / Holiday <span>-></span> 10:00 - 18:00h</li>            
+            </ul>
+            <div class="info-final">
+                <div class="info-final-phone" style="float: left;">
+                    <img src="images/Info/Phone.png" alt="Phone Icon" width="50" height="50">
+                    <p>928 76 01 22</p>
+                </div>            
+                <div class="info-final-mail" style="float: right;">
+                    <img src="images/Info/Arroba.png" alt="Email Icon" width="50" height="50">
+                    <p>maspalomasSwimmingC@fsm.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="box">
+                <div id="box-more">                    
+                    <p>Check each activitie's schedule</p>
+                    <a href="/downloads/this is an example of download.txt" download>
+                        <img class="schedule" src="images/Swimming classes.png" alt="Swimming Icon">
+                    </a>        
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

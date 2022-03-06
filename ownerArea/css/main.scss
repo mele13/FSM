@@ -1,0 +1,141 @@
+/*
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+ME                                        LE
+ME     MMMMMMMMM            MMMMMMMMM     LE
+ME     MMMMMMMMMM          MMMMMMMMMM     LE
+ME     MMMMMMMMMMM        MMMMMMMMMMM     LE
+ME     MMMMMMMMMMMM      MMMMMMMMMMMM     LE
+ME     MMMMMMMM MMMM    MMMM MMMMMMMM     LE
+ME     MMMMMMMM  MMMM  MMMM  MMMMMMMM     LE
+ME     MMMMMMMM   MMMMMMMM   MMMMMMMM     LE
+ME     MMMMMMMM    MMMMMM    MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME     MMMMMMMM              MMMMMMMM     LE
+ME                                        LE
+ME     Mele13                             LE
+ME                                        LE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
+*/
+
+/* Body and HTML */
+* {box-sizing: border-box}
+
+body { // Applies to whole page
+    background-color: #121212;
+    //margin: 1.5em; // em unit = relative unit - MARGIN AND PADDING
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General cases */
+a { 
+    text-decoration: none;
+    color: #FFF;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1 {
+    color: #FFF;
+    margin-top: -1.2em;
+    margin-left: 18em;
+    font-size: 50px;
+}
+
+header .log-out {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1.5em;
+    margin-right: 3em;
+
+}
+
+section.user {
+    height: 100vh;
+
+    .container {
+        display: flex;
+        font-size: 30px;
+
+        .col1 {
+            flex: 25%;
+
+            .line-red-vertical {
+                position: absolute;
+                width: 687px;
+                height: 0px;
+                left: 535px;
+                top: 967px;
+                border: 3px solid #E60000;
+                transform: rotate(-90deg);
+                left: 8%;
+                top: 62%;
+            }
+
+            .list {
+                position: relative;
+                top: 20%;
+            }
+
+            ul {
+                list-style-type: none;
+                color: #FFF;
+                li {margin-bottom: 6px;}
+            }
+            
+            .line-white {
+                position: absolute;
+                width: 355px;
+                height: 0px;
+                left: 127px;
+                top: 784px;
+                border: 3px solid #FFFFFF;
+                top: 62.5%; left: 0;
+                margin-left: 1.65em;
+            }
+            
+            .line-white-2 {
+
+                position: absolute;
+                width: 355px;
+                height: 0px;
+                left: 127px;
+                top: 895px;
+                border: 3px solid #FFFFFF;
+                top: 86.2%; left: 0;
+                margin-left: 1.65em;
+            }
+        }
+
+        .col2 {
+            flex: 70%;
+
+            p {
+                color: #FFF;
+                position: relative;
+                left: 25.5%;
+                margin-top: 0.6em;
+            }
+
+            .line-red-horizontal {
+                position: absolute;
+                width: 1532px;
+                height: 0px;
+                left: 201px;
+                top: 190px;
+                border: 3px solid #E60000;
+            }
+
+            svg {
+                margin-left: 3.1em;
+            }
+        }
+    }
+}
