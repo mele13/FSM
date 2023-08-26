@@ -23,13 +23,12 @@ MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
 */
 /* Body and HTML */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #121212;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* General cases */
@@ -60,20 +59,13 @@ header .log-out {
 section.user {
   height: 100vh;
 }
-
 section.user .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 30px;
 }
-
 section.user .container .col1 {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
+  flex: 25%;
 }
-
 section.user .container .col1 .line-red-vertical {
   position: absolute;
   width: 687px;
@@ -81,26 +73,21 @@ section.user .container .col1 .line-red-vertical {
   left: 535px;
   top: 967px;
   border: 3px solid #E60000;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   left: 8%;
   top: 62%;
 }
-
 section.user .container .col1 .list {
   position: relative;
   top: 20%;
 }
-
 section.user .container .col1 ul {
   list-style-type: none;
   color: #FFF;
 }
-
 section.user .container .col1 ul li {
   margin-bottom: 6px;
 }
-
 section.user .container .col1 .line-white {
   position: absolute;
   width: 355px;
@@ -112,7 +99,6 @@ section.user .container .col1 .line-white {
   left: 0;
   margin-left: 1.65em;
 }
-
 section.user .container .col1 .line-white-2 {
   position: absolute;
   width: 355px;
@@ -124,20 +110,15 @@ section.user .container .col1 .line-white-2 {
   left: 0;
   margin-left: 1.65em;
 }
-
 section.user .container .col2 {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
+  flex: 70%;
 }
-
 section.user .container .col2 p {
   color: #FFF;
   position: relative;
   left: 25.5%;
   margin-top: 0.6em;
 }
-
 section.user .container .col2 .line-red-horizontal {
   position: absolute;
   width: 1532px;
@@ -146,8 +127,6 @@ section.user .container .col2 .line-red-horizontal {
   top: 190px;
   border: 3px solid #E60000;
 }
-
 section.user .container .col2 svg {
   margin-left: 3.1em;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

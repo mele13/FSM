@@ -24,13 +24,12 @@ MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
 body {
   background-color: #121212;
   color: #FFF;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
   margin-bottom: 3em;
 }
-
 header h1 {
   color: #FFF;
   margin-top: -1.2em;
@@ -39,29 +38,17 @@ header h1 {
 }
 
 .appointment {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .appointment img, .appointment form {
   width: 30%;
   margin: 1em;
 }
-
 .appointment .appointment-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* The container */
   /* Hide the browser's default radio button */
   /* Create a custom radio button */
@@ -77,48 +64,33 @@ header h1 {
   /* Show the checkbox when checked */
   /* Style the checkbox/indicator */
 }
-
 .appointment .appointment-form .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0.5em 0;
 }
-
 .appointment .appointment-form .form-group * {
   font-size: 1.3rem;
   margin: 2px 0;
 }
-
 .appointment .appointment-form .form-group .btn {
-  background-color: #12121212;
+  background-color: rgba(18, 18, 18, 0.0705882353);
   border: 3px solid #E60000;
   border-radius: 20px;
   height: 50px;
   color: white;
   width: 50%;
   margin: 0 auto !important;
-  -webkit-transition: 0.4s all linear;
   transition: 0.4s all linear;
 }
-
 .appointment .appointment-form .form-group .btn:hover {
   border: none;
   background-color: #E60000;
   color: #121212;
 }
-
 .appointment .appointment-form .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
@@ -126,16 +98,13 @@ header h1 {
   font-size: 1.3rem;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
-
 .appointment .appointment-form .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-
 .appointment .appointment-form .checkmark {
   position: absolute;
   top: 0;
@@ -145,25 +114,20 @@ header h1 {
   background-color: #eee;
   border-radius: 50%;
 }
-
 .appointment .appointment-form .container:hover input ~ .checkmark {
   background-color: #999999;
 }
-
 .appointment .appointment-form .container input:checked ~ .checkmark {
   background-color: #FFFFFF;
 }
-
 .appointment .appointment-form .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-
 .appointment .appointment-form .container input:checked ~ .checkmark:after {
   display: block;
 }
-
 .appointment .appointment-form .container .checkmark:after {
   top: 9px;
   left: 9px;
@@ -172,7 +136,6 @@ header h1 {
   border-radius: 50%;
   background: #121212;
 }
-
 .appointment .appointment-form .checkbox {
   position: absolute;
   top: 0;
@@ -181,25 +144,20 @@ header h1 {
   width: 25px;
   background-color: #FFF;
 }
-
 .appointment .appointment-form .container:hover input ~ .checkbox {
   background-color: #ccc;
 }
-
 .appointment .appointment-form .container input:checked ~ .checkbox {
   background-color: #2196F3;
 }
-
 .appointment .appointment-form .checkbox:after {
   content: "";
   position: absolute;
   display: none;
 }
-
 .appointment .appointment-form .container input:checked ~ .checkbox:after {
   display: block;
 }
-
 .appointment .appointment-form .container .checkbox:after {
   left: 9px;
   top: 5px;
@@ -207,7 +165,6 @@ header h1 {
   height: 10px;
   border: solid #FFF;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -215,5 +172,4 @@ header h1 {
   .appointment img {
     display: none;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

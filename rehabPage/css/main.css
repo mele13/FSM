@@ -23,7 +23,7 @@ MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
 */
 body {
   background-color: #121212;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* General cases */
@@ -43,7 +43,6 @@ section {
 h1 {
   color: #FFFFFF;
 }
-
 h1 span {
   color: #E60000;
 }
@@ -51,7 +50,6 @@ h1 span {
 header {
   height: 15vh;
 }
-
 header h1 {
   margin-top: -1.2em;
   margin-left: 12.5em;
@@ -62,22 +60,16 @@ section.first-info {
   margin: 1.5em;
   height: 60vh;
 }
-
 section.first-info .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
-
 section.first-info .top .AchSlides {
   width: 628px;
   height: 441px;
   border-radius: 20px;
   float: left;
 }
-
 section.first-info .top p {
   font-size: 30px;
   color: #FFF;
@@ -90,11 +82,9 @@ section.first-info .top p {
 section.second-info {
   font-size: 30px;
 }
-
 section.second-info h1 {
   margin-left: 152px;
 }
-
 section.second-info p {
   margin-top: -0.5em;
   margin-left: 152px;
@@ -103,22 +93,13 @@ section.second-info p {
   height: 304;
   margin-bottom: 2em;
 }
-
 section.second-info .box {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-content: center;
 }
-
 section.second-info .box #box-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
   border: 5px solid #FFFFFF;
@@ -126,7 +107,6 @@ section.second-info .box #box-more {
   width: 800px;
   height: 268px;
 }
-
 section.second-info .box #box-more p {
   display: inline;
   font-size: 30px;
@@ -145,7 +125,6 @@ section.bottom {
   height: 40vh;
   margin-top: 3em;
 }
-
 section.bottom .p-bottom-text {
   width: 963px;
   height: 150px;
@@ -155,24 +134,15 @@ section.bottom .p-bottom-text {
   margin-top: 3em;
   color: #FFF;
 }
-
 section.bottom .p-bottom-text span {
   color: #E60000;
 }
-
 section.bottom .boxj {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 section.bottom .boxj #box-activities {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
   border: 5px solid #E60000;
@@ -180,15 +150,11 @@ section.bottom .boxj #box-activities {
   padding: 10px;
   width: 400px;
   height: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 section.bottom .boxj #box-activities p {
   margin-top: 0em;
   display: inline;
   font-size: 25px;
   color: #FFFFFF;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

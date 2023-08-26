@@ -22,14 +22,13 @@ MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
 MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
 */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #121212;
   margin: 1.5em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -56,7 +55,6 @@ section {
 h1 {
   color: #FFFFFF;
 }
-
 h1 span {
   color: #E60000;
 }
@@ -66,7 +64,6 @@ header h1 {
   margin-left: 15.5em;
   font-size: 50px;
 }
-
 header svg {
   cursor: pointer;
 }
@@ -75,50 +72,37 @@ section.activities {
   height: 160vh;
   font-size: 30px;
 }
-
 section.activities h1 {
   margin-left: 100px;
 }
-
 section.activities .grid {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -ms-grid;
+  justify-content: center;
   display: grid;
-  -ms-grid-columns: (350px)[4];
-      grid-template-columns: repeat(4, 350px);
-  -ms-grid-rows: (380px)[3];
-      grid-template-rows: repeat(3, 380px);
+  grid-template-columns: repeat(4, 350px);
+  grid-template-rows: repeat(3, 380px);
   grid-gap: 50px 80px;
   text-align: center;
 }
-
 section.activities .grid .grid-item {
   border: thin #FFFFFF solid;
   padding: 10px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-
 section.activities .grid .grid-item img {
   width: 225px;
   height: 154px;
   margin-top: 20px;
 }
-
 section.activities .grid .grid-item p {
   color: #FFFFFF;
   margin-top: -0.2em;
   margin-bottom: -1em;
 }
-
 section.activities .grid .grid-item p.head {
   font-size: 30px;
 }
-
 section.activities .grid .grid-item p.content {
   font-size: 20px;
 }
@@ -133,7 +117,6 @@ section.activities .grid .grid-item p.content {
   /* On hover, add a black background color with a little bit see-through */
   /* Number text (1/3 etc) */
 }
-
 .slideshow-container .prev, .slideshow-container .next {
   cursor: pointer;
   position: absolute;
@@ -144,24 +127,19 @@ section.activities .grid .grid-item p.content {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 18px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
-
 .slideshow-container .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 .slideshow-container .prev:hover, .slideshow-container .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .slideshow-container .numbertext {
   color: #FFFFFF;
   font-size: 12px;
@@ -180,7 +158,6 @@ section.activities .grid .grid-item p.content {
   background-color: #FFFFFF;
   border-radius: 50%;
   display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
@@ -195,78 +172,52 @@ section.activities .grid .grid-item p.content {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
   }
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next, .text {
     font-size: 11px;
   }
 }
-
 section.articles {
   height: 35vh;
 }
-
 section.articles .svg-article {
   margin: auto;
   width: 100%;
   padding: 10px;
   height: 171px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 section.articles .svg-article .bg-svg-article {
   height: 100px;
   width: 100%;
   text-align: center;
 }
-
 section.articles .svg-article .bg-svg-article img {
   width: 60%;
 }
-
 section.articles .svg-article img {
   vertical-align: middle;
 }
-
 section.articles .slides {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin-top: -10.5em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 50%;
   margin: auto;
   position: relative;
   top: -171px;
 }
-
 section.articles .article-overlays .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
   border: 3px solid #FFF;
@@ -275,7 +226,6 @@ section.articles .article-overlays .box {
   width: 277px;
   height: 130px;
 }
-
 section.articles .article-overlays .box p {
   font-size: 15px;
   color: #FFFFFF;
@@ -284,7 +234,6 @@ section.articles .article-overlays .box p {
   width: 106px;
   text-align: center;
 }
-
 section.articles .article-overlays .box .background-box1, section.articles .article-overlays .box .background-box2, section.articles .article-overlays .box .background-box3, section.articles .article-overlays .box .background-box4, section.articles .article-overlays .box .background-box5,
 section.articles .article-overlays .box .background-box6, section.articles .article-overlays .box .background-box7, section.articles .article-overlays .box .background-box8, section.articles .article-overlays .box .background-box9 {
   width: 131px;
@@ -297,39 +246,30 @@ section.articles .article-overlays .box .background-box6, section.articles .arti
   border-left: 3px solid #FFF;
   background-size: cover;
 }
-
 section.articles .article-overlays .box .background-box1 {
   background-image: url("../images/Articles/Medicine ball.jpeg");
 }
-
 section.articles .article-overlays .box .background-box2 {
   background-image: url("../images/Articles/Children obesity.jpg");
 }
-
 section.articles .article-overlays .box .background-box3 {
   background-image: url("../images/Articles/Autism kids.PNG");
 }
-
 section.articles .article-overlays .box .background-box4 {
   background-image: url("../images/Articles/ExerciseforChildren.jpg");
 }
-
 section.articles .article-overlays .box .background-box5 {
   background-image: url("../images/Articles/Bbc.jpg");
 }
-
 section.articles .article-overlays .box .background-box6 {
   background-image: url("../images/Articles/Kids health.jpg");
 }
-
 section.articles .article-overlays .box .background-box7 {
   background-image: url("../images/Articles/Cerebral palsy.jpg");
 }
-
 section.articles .article-overlays .box .background-box8 {
   background-image: url("../images/Articles/Sports in childhood.jfif");
 }
-
 section.articles .article-overlays .box .background-box9 {
   background-image: url("../images/Articles/Swimming.jfif");
 }
@@ -338,40 +278,30 @@ section.info {
   height: 50vh;
   font-size: 30px;
 }
-
 section.info h1 {
   margin-left: 152px;
 }
-
 section.info p, section.info li {
   color: #FFF;
   margin-left: 152px;
   margin-right: 1.5em;
 }
-
 section.info ul {
   list-style-type: none;
 }
-
 section.info ul span {
   color: #E60000;
 }
-
 section.info .info-final-phone, section.info .info-final-mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 section.info .info-final-phone img, section.info .info-final-mail img {
   margin-left: 200px;
 }
-
 section.info .info-final-phone p, section.info .info-final-mail p {
   margin-left: 8px;
   margin-top: 0em;
 }
-
 section.info .info-final-mail {
   margin-right: 1.5em;
 }
@@ -379,20 +309,12 @@ section.info .info-final-mail {
 section.schedule {
   height: 30vh;
 }
-
 section.schedule .box {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 section.schedule .box #box-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
   border: 5px solid #FFFFFF;
@@ -400,24 +322,16 @@ section.schedule .box #box-more {
   padding: 10px;
   width: 431px;
   height: 188px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 section.schedule .box #box-more .schedule {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 130px;
   height: 130px;
   margin-right: 2em;
 }
-
 section.schedule .box #box-more p {
   display: inline;
   font-size: 30px;
@@ -426,5 +340,4 @@ section.schedule .box #box-more p {
   height: 130px;
   margin-right: 0.5em;
   text-align: center;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

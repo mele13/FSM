@@ -23,7 +23,7 @@ MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEELE
 */
 body {
   background-color: #121212;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* General cases */
@@ -43,7 +43,6 @@ section {
 h1 {
   color: #FFFFFF;
 }
-
 h1 span {
   color: #E60000;
 }
@@ -51,7 +50,6 @@ h1 span {
 header {
   height: 15vh;
 }
-
 header h1 {
   margin-top: -1.2em;
   margin-left: 12.5em;
@@ -62,29 +60,22 @@ section.first-info {
   margin: 1.5em;
   height: 60vh;
 }
-
 section.first-info .top-bt {
   color: #FFF;
   font-size: 30px;
   margin-top: -30px;
   margin-left: 10px;
 }
-
 section.first-info .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
-
 section.first-info .top .AchSlides {
   width: 628px;
   height: 441px;
   border-radius: 20px;
   float: left;
 }
-
 section.first-info .top p {
   font-size: 30px;
   color: #FFF;
@@ -97,74 +88,52 @@ section.first-info .top p {
 section.second-info {
   font-size: 30px;
 }
-
 section.second-info h1 {
   margin-left: 152px;
 }
-
 section.second-info .grid {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -ms-grid;
+  justify-content: center;
   display: grid;
-  -ms-grid-columns: (350px)[3];
-      grid-template-columns: repeat(3, 350px);
-  -ms-grid-rows: (380px)[3];
-      grid-template-rows: repeat(3, 380px);
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(3, 380px);
   grid-gap: 50px 180px;
   text-align: center;
   height: 850px;
 }
-
 section.second-info .grid .grid-item {
   border: thin #FFFFFF solid;
   padding: 10px;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-
 section.second-info .grid .grid-item img {
   width: 225px;
   height: 154px;
   margin-top: 20px;
 }
-
 section.second-info .grid .grid-item p {
   color: #FFFFFF;
   margin-top: -0.2em;
   margin-bottom: -1em;
 }
-
 section.second-info .grid .grid-item p.head {
   font-size: 30px;
 }
-
 section.second-info .grid .grid-item p.content {
   font-size: 20px;
 }
-
 section.second-info .all-activities .p-activities {
   color: #FFF;
   font-size: 20px;
   margin-left: 7.5em;
 }
-
 section.second-info .boxj {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 section.second-info .boxj #box-activities {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
   border: 5px solid #E60000;
@@ -172,14 +141,9 @@ section.second-info .boxj #box-activities {
   padding: 10px;
   width: 28vh;
   height: 5vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 section.second-info .boxj #box-activities p {
   display: inline;
   font-size: 25px;
@@ -190,49 +154,35 @@ section.articles {
   height: 35vh;
   margin-top: 300px;
 }
-
 section.articles .svg-article {
   margin: auto;
   width: 100%;
   padding: 10px;
   height: 171px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 section.articles .svg-article .bg-svg-article {
   height: 100px;
   width: 100%;
   text-align: center;
 }
-
 section.articles .svg-article .bg-svg-article img {
   width: 60%;
 }
-
 section.articles .svg-article img {
   vertical-align: middle;
 }
-
 section.articles .slides {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   margin-top: -10.5em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 50%;
   margin: auto;
   position: relative;
   top: -171px;
 }
-
 section.articles .article-overlays .box-article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
   border: 3px solid #FFF;
@@ -241,7 +191,6 @@ section.articles .article-overlays .box-article {
   width: 260px;
   height: 110px;
 }
-
 section.articles .article-overlays .box-article p {
   font-size: 15px;
   color: #FFFFFF;
@@ -250,7 +199,6 @@ section.articles .article-overlays .box-article p {
   width: 106px;
   text-align: center;
 }
-
 section.articles .article-overlays .box-article .background-box1, section.articles .article-overlays .box-article .background-box2, section.articles .article-overlays .box-article .background-box3, section.articles .article-overlays .box-article .background-box4, section.articles .article-overlays .box-article .background-box5, section.articles .article-overlays .box-article .background-box6 {
   width: 131px;
   height: 130px;
@@ -262,48 +210,36 @@ section.articles .article-overlays .box-article .background-box1, section.articl
   border-left: 3px solid #FFF;
   background-size: cover;
 }
-
 section.articles .article-overlays .box-article .background-box1 {
   background-image: url("../images/Articles/Spinal cord injuries.jpg");
 }
-
 section.articles .article-overlays .box-article .background-box2 {
   background-image: url("../images/Articles/Wheelchair.PNG");
 }
-
 section.articles .article-overlays .box-article .background-box3 {
   background-image: url("../images/Articles/Chronically ill.jpg");
 }
-
 section.articles .article-overlays .box-article .background-box4 {
   background-image: url("../images/Articles/Amputees.jpg");
 }
-
 section.articles .article-overlays .box-article .background-box5 {
   background-image: url("../images/Articles/Down syndrome swimming.jfif");
 }
-
 section.articles .article-overlays .box-article .background-box6 {
   background-image: url("../images/Articles/Benefits and barriers.jfif");
 }
 
 section.bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 20vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 section.bottom p {
   width: 1180px;
   height: 310px;
   text-align: center;
   color: #FFF;
 }
-
 section.bottom p span {
   color: #E60000;
 }
@@ -311,20 +247,12 @@ section.bottom p span {
 section.schedule {
   height: 40vh;
 }
-
 section.schedule .box {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 section.schedule .box #box-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 20px;
   border: 5px solid #FFFFFF;
@@ -332,24 +260,16 @@ section.schedule .box #box-more {
   padding: 10px;
   width: 431px;
   height: 188px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 section.schedule .box #box-more .schedule {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 130px;
   height: 130px;
   margin-right: 2em;
 }
-
 section.schedule .box #box-more p {
   display: inline;
   font-size: 30px;
@@ -358,5 +278,4 @@ section.schedule .box #box-more p {
   height: 130px;
   margin-right: 0.5em;
   text-align: center;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
