@@ -16,10 +16,12 @@ This project provides a user-friendly website interface for FSM's health and fit
 
 
 ### Video 1
-https://github.com/mele13/FSM/assets/87198060/7a6980f2-e05e-4011-b7c4-b80ba1589455
+https://github.com/mele13/FSM/assets/87198060/f7815ff9-2c9a-4356-aa95-e62178d1d4ff
+
 
 ### Video 2
-https://github.com/mele13/FSM/assets/87198060/d3672383-4960-45fc-b76e-d56cb63d91eb
+https://github.com/mele13/FSM/assets/87198060/d06dbcf0-fbc0-4bac-beda-ca55a09dd3e3
+
 
 ## Features
 - **Navigation Bar**: The website features a responsive navigation bar that allows users to easily access different sections of the website.
