@@ -14,8 +14,12 @@ Welcome to the FSM - Health & Fitness Centers repository! This project is a comp
 ## Project Overview
 This project provides a user-friendly website interface for FSM's health and fitness centers. It is designed to showcase the various offerings, services, and facilities available at the fitness centers. The website is organized into different sections that highlight the key aspects of FSM's services.
 
-![ezgif com-video-to-gif](https://github.com/mele13/FSM/assets/87198060/677947d7-c217-4da9-9e77-4d878a73e2f7)
 
+### Video 1
+https://github.com/mele13/FSM/assets/87198060/7a6980f2-e05e-4011-b7c4-b80ba1589455
+
+### Video 2
+https://github.com/mele13/FSM/assets/87198060/d3672383-4960-45fc-b76e-d56cb63d91eb
 
 ## Features
 - **Navigation Bar**: The website features a responsive navigation bar that allows users to easily access different sections of the website.
