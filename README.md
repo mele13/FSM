@@ -34,7 +34,7 @@ https://github.com/mele13/FSM/assets/87198060/d06dbcf0-fbc0-4bac-beda-ca55a09dd3
 To use this project, follow these steps:
 1. Clone the repository:
    ```bash
-   https://github.com/mele13/FSM
+   https://github.com/mele13/FSM.git
    ```
    ```bash
    cd FSM
